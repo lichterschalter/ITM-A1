@@ -115,27 +115,30 @@ public class ImageConverter
         // ***************************************************************
 
         BufferedImage img;
-        try {
-            // load the input image
-            img = ImageIO.read(input);
-            
-            // encode and save the image 
-            if( targetFormat.equals( "JPEG" )){
-	            outputFile = new File(input.getAbsolutePath() + "-" + Float.toString(quality) + "." + targetFormat.toLowerCase());
-	            final ImageWriter imgWriter = ImageIO.getImageWritersByFormatName("jpg").next();
-	            imgWriter.setOutput(new FileImageOutputStream(outputFile));
-	            ImageWriteParam imgWriteParams = imgWriter.getDefaultWriteParam();
-	            imgWriteParams.setCompressionMode(ImageWriteParam.MODE_EXPLICIT);
-	            imgWriteParams.setCompressionQuality(quality);
-	            imgWriter.write(null, new IIOImage(img, null, null), imgWriteParams);
-            }else{
-	            outputFile = new File(input.getAbsolutePath() + "." + targetFormat.toLowerCase());
-	            ImageIO.write(img, targetFormat, outputFile); 
-            }
-        } catch (IOException e) {
-            System.out.println("Image could not be read or written!");
-            System.exit(1);
-        }
+
+	    // load the input image
+	    img = ImageIO.read(input);
+	    
+	    // encode and save the image 
+	    if( targetFormat.equals( "JPEG" )){
+	        outputFile = new File(output.getAbsolutePath() + "/" + input.getName() + "-" + Float.toString(quality) + "." + targetFormat.toLowerCase());
+	        final ImageWriter imgWriter = ImageIO.getImageWritersByFormatName("jpg").next();
+	        imgWriter.setOutput(new FileImageOutputStream(outputFile));
+	        ImageWriteParam imgWriteParams = imgWriter.getDefaultWriteParam();
+	        imgWriteParams.setCompressionMode(ImageWriteParam.MODE_EXPLICIT);
+	        imgWriteParams.setCompressionQuality(quality);
+	    	if( input.getName().equals("picture_of_coati_dithered.png")) {
+	    		IIOImage iioi = new IIOImage(img, null, null);
+	    		System.out.println(iioi.getRenderedImage().getWidth());
+		        imgWriter.write(null, new IIOImage(img, null, null), imgWriteParams);
+	    		System.out.println("hello");
+	    	}else{
+	    		imgWriter.write(null, new IIOImage(img, null, null), imgWriteParams);
+	        }
+	    }else{
+	        outputFile = new File(output.getAbsolutePath() + "/" + input.getName() + "." + targetFormat.toLowerCase());
+	        ImageIO.write(img, targetFormat, outputFile); 
+	    }
 
         return outputFile;
     }
