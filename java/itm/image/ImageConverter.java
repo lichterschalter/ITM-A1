@@ -122,12 +122,12 @@ public class ImageConverter
             // encode and save the image 
             if( targetFormat.equals( "JPEG" )){
 	            outputFile = new File(input.getAbsolutePath() + "-" + Float.toString(quality) + "." + targetFormat.toLowerCase());
-	            final ImageWriter writer = ImageIO.getImageWritersByFormatName("jpg").next();
-	            writer.setOutput(new FileImageOutputStream(outputFile));
-	            ImageWriteParam jpgWriteParam = writer.getDefaultWriteParam();
-	            jpgWriteParam.setCompressionMode(ImageWriteParam.MODE_EXPLICIT);
-	            jpgWriteParam.setCompressionQuality(quality);
-				writer.write(null, new IIOImage(img, null, null), jpgWriteParam);
+	            final ImageWriter imgWriter = ImageIO.getImageWritersByFormatName("jpg").next();
+	            imgWriter.setOutput(new FileImageOutputStream(outputFile));
+	            ImageWriteParam imgWriteParams = imgWriter.getDefaultWriteParam();
+	            imgWriteParams.setCompressionMode(ImageWriteParam.MODE_EXPLICIT);
+	            imgWriteParams.setCompressionQuality(quality);
+	            imgWriter.write(null, new IIOImage(img, null, null), imgWriteParams);
             }else{
 	            outputFile = new File(input.getAbsolutePath() + "." + targetFormat.toLowerCase());
 	            ImageIO.write(img, targetFormat, outputFile); 
