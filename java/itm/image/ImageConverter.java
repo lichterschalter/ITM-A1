@@ -127,14 +127,7 @@ public class ImageConverter
 	        ImageWriteParam imgWriteParams = imgWriter.getDefaultWriteParam();
 	        imgWriteParams.setCompressionMode(ImageWriteParam.MODE_EXPLICIT);
 	        imgWriteParams.setCompressionQuality(quality);
-	    	if( input.getName().equals("picture_of_coati_dithered.png")) {
-	    		IIOImage iioi = new IIOImage(img, null, null);
-	    		System.out.println(iioi.getRenderedImage().getWidth());
-		        imgWriter.write(null, new IIOImage(img, null, null), imgWriteParams);
-	    		System.out.println("hello");
-	    	}else{
-	    		imgWriter.write(null, new IIOImage(img, null, null), imgWriteParams);
-	        }
+	    	imgWriter.write(null, new IIOImage(img, null, null), imgWriteParams);
 	    }else{
 	        outputFile = new File(output.getAbsolutePath() + "/" + input.getName() + "." + targetFormat.toLowerCase());
 	        ImageIO.write(img, targetFormat, outputFile); 
