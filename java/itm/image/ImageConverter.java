@@ -14,6 +14,9 @@ import java.awt.image.*;
 import java.io.*;
 import javax.imageio.*;
 import javax.swing.*;
+import javax.imageio.ImageWriteParam;
+import javax.imageio.plugins.jpeg.JPEGImageWriteParam;
+import javax.imageio.stream.FileImageOutputStream;
 
 /**
     This class converts images into various image formats (BMP, PNG, ...).
@@ -111,13 +114,24 @@ public class ImageConverter
         //  Fill in your code here!
         // ***************************************************************
 
-        outputFile = new File(input.getAbsolutePath() + "." + targetFormat.toLowerCase());
         BufferedImage img;
         try {
             // load the input image
             img = ImageIO.read(input);
+            
             // encode and save the image 
-            ImageIO.write(img, targetFormat, outputFile); 
+            if( targetFormat.equals( "JPEG" )){
+	            outputFile = new File(input.getAbsolutePath() + "-" + Float.toString(quality) + "." + targetFormat.toLowerCase());
+	            final ImageWriter writer = ImageIO.getImageWritersByFormatName("jpg").next();
+	            writer.setOutput(new FileImageOutputStream(outputFile));
+	            ImageWriteParam jpgWriteParam = writer.getDefaultWriteParam();
+	            jpgWriteParam.setCompressionMode(ImageWriteParam.MODE_EXPLICIT);
+	            jpgWriteParam.setCompressionQuality(quality);
+				writer.write(null, new IIOImage(img, null, null), jpgWriteParam);
+            }else{
+	            outputFile = new File(input.getAbsolutePath() + "." + targetFormat.toLowerCase());
+	            ImageIO.write(img, targetFormat, outputFile); 
+            }
         } catch (IOException e) {
             System.out.println("Image could not be read or written!");
             System.exit(1);
