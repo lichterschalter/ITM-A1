@@ -111,14 +111,18 @@ public class ImageConverter
         //  Fill in your code here!
         // ***************************************************************
 
-        // load the input image
+        outputFile = new File("Out.jpeg");
         BufferedImage img;
         try {
+            // load the input image
             img = ImageIO.read(input);
-        } catch (IOException e) {
-        }
        
-        // encode and save the image 
+            // encode and save the image 
+            ImageIO.write(img, JPEG, outputFile); 
+        } catch (IOException e) {
+            System.out.println("Image could not be read");
+            System.exit(1);
+        }
 
         return outputFile;
     }
