@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="build" path="java"/>
+	<classpathentry kind="var" path="JRE_LIB" rootpath="JRE_SRCROOT" sourcepath="JRE_SRC"/>
+	<classpathentry kind="lib" path="/home/rustong_pu/Programming/ITM - A1/lib/commons-cli.jar"/>
+	<classpathentry kind="lib" path="/home/rustong_pu/Programming/ITM - A1/lib/jl1.0.jar"/>
+	<classpathentry kind="lib" path="/home/rustong_pu/Programming/ITM - A1/lib/jmf.jar"/>
+	<classpathentry kind="lib" path="/home/rustong_pu/Programming/ITM - A1/lib/jogg-0.0.7.jar"/>
+	<classpathentry kind="lib" path="/home/rustong_pu/Programming/ITM - A1/lib/jorbis-0.0.15.jar"/>
+	<classpathentry kind="lib" path="/home/rustong_pu/Programming/ITM - A1/lib/logback-classic.jar"/>
+	<classpathentry kind="lib" path="/home/rustong_pu/Programming/ITM - A1/lib/logback-core.jar"/>
+	<classpathentry kind="lib" path="/home/rustong_pu/Programming/ITM - A1/lib/mp3spi1.9.4.jar"/>
+	<classpathentry kind="lib" path="/home/rustong_pu/Programming/ITM - A1/lib/prefuse.jar"/>
+	<classpathentry kind="lib" path="/home/rustong_pu/Programming/ITM - A1/lib/slf4j-api.jar"/>
+	<classpathentry kind="lib" path="/home/rustong_pu/Programming/ITM - A1/lib/tritonus_aos-0.3.6.jar"/>
+	<classpathentry kind="lib" path="/home/rustong_pu/Programming/ITM - A1/lib/tritonus_dsp-0.3.6.jar"/>
+	<classpathentry kind="lib" path="/home/rustong_pu/Programming/ITM - A1/lib/tritonus_share.jar"/>
+	<classpathentry kind="lib" path="/home/rustong_pu/Programming/ITM - A1/lib/vorbisspi1.0.2.jar"/>
+	<classpathentry kind="lib" path="/home/rustong_pu/Programming/ITM - A1/lib/xuggle-xuggler-test.jar"/>
+	<classpathentry kind="lib" path="/home/rustong_pu/Programming/ITM - A1/lib/xuggle-xuggler.jar"/>
+	<classpathentry kind="lib" path="/usr/lib64/eclipse/plugins/org.eclipse.equinox.launcher_1.3.100.v20160304-1300.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,47 @@
+---------------------------------------
+Assignment 1 - Digital Image Processing
+---------------------------------------
+
+Please answer the following questions in written form (1-2 A4 pages max.)
+
+-----------------------------------------------------------------
+Task 1.1: comparison of image formats
+-----------------------------------------------------------------
+
+* Compare your converted files wrt. file size and quality ("GOOD", "MEDIUM", "BAD") in a table (e.g., an excel spreadsheet)
+
+* Did the file sizes increase or decrease when you used different formats? Why? What is the difference between lossy and lossless image formats?
+
+* How many bytes are required in theory (i.e. ignoring any file format overhead and image compression) to store a 200x200px monochrome thumbnail (i.e. a binary image)?
+
+* How many bytes are required (in theory again) if you want to store the same image with 16 possible colors?
+
+
+------------------------------------------------------------------------------
+Task 1.2: extract/get image meta data
+------------------------------------------------------------------------------
+
+* Critically discuss the used format for storing the image meta data. Why do you think the used format is good/bad? 
+
+----------------------------------------------------------
+Task 1.3: load images and convert them to thumbnails
+----------------------------------------------------------
+
+* What is an affine transformation? 
+
+* What affine transformations are supported by Java2D?
+
+* What 2D transformation matrix is required to rotate a point by 90 degrees counterclockwise (around the origin)? Explain.
+
+
+----------------------------------------------------------
+Task 1.4: create histogram representation for images
+----------------------------------------------------------
+
+* Can the created histogram be used to reconstruct the image? What other information would be needed?
+
+* Would your function work with the HSV or CMYK color space?
+
+* Explain the difference between an individual color histogram, a combined color histogram and an intensity histogram. What information is displayed in each of these diagrams? What histogram type did we use?
+
+* Explain the concept of histogram bins.

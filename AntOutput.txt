@@ -1,0 +1,15 @@
+
+        ITM build file
+    
+Main targets:
+
+ ImageConverter           test the ImageConverter: example: ant.bat ImageConverter -Dinput=media/img/ -Doutput=test/ -Dformat=jpeg -Dquality=0.3
+ ImageHistogramGenerator  test the ImageHistogramGenerator: example: ant.bat ImageHistogramGenerator -Dinput=media/img/ -Doutput=test/ -Dbins=256
+ ImageMetadataGenerator   test the ImageMetadataGenerator: example: ant.bat ImageMetadataGenerator -Dinput=media/img/ -Doutput=test/
+ ImageThumbnailGenerator  test the ImageThumbnailGenerator: example: ant.bat ImageThumbnailGenerator -Dinput=media/img/ -Doutput=test/ -Drotation=90
+ clean                    complete clean up
+ clean-build              clean build directories
+ clean-thumbs             clean all generated thumbnails and metadata
+ compile                  compile the source
+ javadoc                  creates the javadoc
+Default target: ImageConverter

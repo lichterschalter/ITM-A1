@@ -1,0 +1,185 @@
+<project name="2016_ITM_UE" default="ImageConverter" basedir=".">
+	<description>
+        ITM build file
+    </description>
+    
+    <record name="AntOutput.txt" action="start" append="true"/>
+
+	<!-- set global properties for this build -->
+	<property name="src" location="java" />
+	<property name="build" location="build" />
+	<property name="doc" location="doc" />
+	<property name="lib" location="lib" />
+	<property name="thumbDir" location="thumbnails" />
+	<property name="thumbDirWebapp" location="webapps/itm/media/md" />
+	<property name="buildWebapp" location="webapps/itm/WEB-INF/classes" />
+	<property name="libWebapp" location="webapps/itm/WEB-INF/lib" />
+	<property name="prefuseJarWebapp" location="webapps/itm/infovis" />
+	
+
+	<!-- class path variable -->
+	<path id="project.class.path">
+		<fileset dir="${lib}">
+			<include name="**/*.jar" />
+		</fileset>
+		<pathelement path="${java.class.path}" />
+	</path>
+
+
+	<!--
+	    Initialization of build.
+	-->
+	<target name="init">
+		<!-- Create the time stamp -->
+		<tstamp />
+		<!-- Create the build directory structure used by compile -->
+		<mkdir dir="${build}" />
+	</target>
+
+    <!--
+        Compiles the source tree
+    -->
+	<target name="compile" depends="init" description="compile the source">
+		<!-- Compile the java code from ${src} into ${build} -->
+		<javac srcdir="${src}" destdir="${build}">
+			<classpath refid="project.class.path" />
+		</javac>
+	</target>
+
+	
+    <!--
+        Creates the javadoc
+    -->
+	<target name="javadoc" depends="init" description="creates the javadoc">
+		<mkdir dir="${doc}" />
+		<!-- create the javadoc from ${src} into ${doc} -->
+		<javadoc sourcepath="${src}" 
+		         destdir="${doc}"
+		         author="true"
+		         version="true"
+		         use="true"
+		         windowtitle="ITM API"
+		         linksource="yes">
+			<doctitle><![CDATA[<h1>ITM UE 2016 API</h1>]]></doctitle>
+			<bottom><![CDATA[<i>&#169; University of Vienna 2016. All Rights Reserved.</i>]]></bottom>
+		</javadoc>
+	</target>
+
+    <!-- 
+        cleans the thumbnail directories 
+    -->
+	<target name="clean-thumbs" description="clean all generated thumbnails and metadata">
+	    <echo>Deleting thumbnail directory ${thumbDir} and ${thumbDirWebapp} if existing</echo>
+		<delete quiet="true">
+			<fileset dir="${thumbDir}" />
+			<fileset dir="${thumbDirWebapp}" />
+		</delete>
+	</target>
+
+    <!-- 
+        cleans the ${build} directory 
+    -->
+	<target name="clean-build" description="clean build directories">
+	    <echo>Deleting build directory ${build} and ${buildWebapp} if existing</echo>
+		<delete dir="${build}"  quiet="true"/>
+		<delete dir="${buildWebapp}"  quiet="true"/>
+	</target>
+
+    <!-- 
+        cleans the thumbnail and ${build} directory 
+    -->
+	<target name="clean" depends="clean-thumbs, clean-build" description="complete clean up"/>
+
+
+	<!--
+        *****************************************************************
+        ***************** Assignment 1 **********************************
+        *****************************************************************
+    -->
+
+	<!--
+	    ImageConverter
+	-->
+	<target name="ImageConverter" depends="compile" description="test the ImageConverter: example: ant.bat ImageConverter -Dinput=media/img/ -Doutput=test/ -Dformat=jpeg -Dquality=0.3">
+    	<!-- set default values for properties / overwrite via commandline! -->
+	    <property name="input" location="media/img/" />
+	    <property name="output" location="test/" />
+	    <property name="format" value="jpeg" />
+		<property name="quality" value="0.5" />
+
+		<mkdir dir="${output}" />
+		<java classname="itm.image.ImageConverter">
+			<arg value="${input}" />
+			<arg value="${output}" />
+			<arg value="${format}" />
+			<arg value="${quality}" />
+			<classpath>
+				<path refid="project.class.path" />
+				<pathelement path="${build}" />
+			</classpath>
+		</java>
+	</target>   	
+	
+	<!--
+	    ImageMetadataGenerator
+	-->
+	<target name="ImageMetadataGenerator" depends="compile" description="test the ImageMetadataGenerator: example: ant.bat ImageMetadataGenerator -Dinput=media/img/ -Doutput=test/">
+    	<!-- set default values for properties / overwrite via commandline! -->
+	    <property name="input" location="media/img/" />
+	    <property name="output" location="test/" />
+
+		<mkdir dir="${output}" />
+		<java classname="itm.image.ImageMetadataGenerator">
+			<arg value="${input}" />
+			<arg value="${output}" />
+			<classpath>
+				<path refid="project.class.path" />
+				<pathelement path="${build}" />
+			</classpath>
+		</java>
+	</target>    
+
+	<!--
+	    ImageThumbnailGenerator
+	-->
+    <target name="ImageThumbnailGenerator" depends="compile" description="test the ImageThumbnailGenerator: example: ant.bat ImageThumbnailGenerator -Dinput=media/img/ -Doutput=test/ -Drotation=90">
+        <!-- set default values for properties / overwrite via commandline! -->
+        <property name="input" location="media/img/" />
+        <property name="output" location="test/" />
+        <property name="rotation" location="90" />
+        
+        <mkdir dir="${output}" />
+        <java classname="itm.image.ImageThumbnailGenerator">
+            <arg value="${input}" />
+            <arg value="${output}" />
+            <arg value="${rotation}" />
+            <classpath>
+                <path refid="project.class.path" />
+                <pathelement path="${build}" />
+            </classpath>
+        </java>
+    </target>
+
+	<!--
+		    ImageHistogramGenerator
+		-->
+	<target name="ImageHistogramGenerator" depends="compile" description="test the ImageHistogramGenerator: example: ant.bat ImageHistogramGenerator -Dinput=media/img/ -Doutput=test/ -Dbins=256">
+	    	<!-- set default values for properties / overwrite via commandline! -->
+		    <property name="input" location="media/img/" />
+		    <property name="output" location="test/" />
+		    <property name="bins" value="256" />
+
+			<mkdir dir="${output}" />
+			<java classname="itm.image.ImageHistogramGenerator">
+				<arg value="${input}" />
+				<arg value="${output}" />
+				<arg value="${bins}" />
+				<classpath>
+					<path refid="project.class.path" />
+					<pathelement path="${build}" />
+				</classpath>
+			</java>
+	</target>   	
+  
+
+</project>
