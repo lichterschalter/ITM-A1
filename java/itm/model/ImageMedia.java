@@ -28,8 +28,159 @@ public class ImageMedia extends AbstractMedia
 
     // add required properties (scope: protected!)
     
+    /**
+    Image width.
+    */
+    protected int width;
+    
+    /**
+    Image height.
+    */
+    protected int height;
+    
+    /**
+    Number of image components.
+    */
+    protected int nrOfComp;
+    
+    /**
+    Number of color components of the image.
+    */
+    protected int nrOfColorComp;
+    
+    /**
+    Transparency of the image.
+    */
+    protected int transparency;
+    
+    /**
+    Pixel size of the image.
+    */
+    protected int pixelSize;
+    
+    /**
+    Color space type of the image.
+    */
+    protected int colSpaceType;
+    
+    /**
+    Orientation of the image.
+    */
+    protected int orientation;
+        
     // add get/set methods for the properties
+    
+    /**
+    @return image width.
+    */
+    public int getWidth() {
+		return width;
+	}
 
+    /**
+    Sets the image width.
+    */
+	public void setWidth(int width) {
+		this.width = width;
+	}
+
+    /**
+    @return image height.
+    */
+	public int getHeight() {
+		return height;
+	}
+
+    /**
+    Sets the image height.
+    */
+	public void setHeight(int height) {
+		this.height = height;
+	}
+
+    /**
+    @return number of image components.
+    */
+	public int getNrOfComp() {
+		return nrOfComp;
+	}
+
+    /**
+    Sets the number of image compontents.
+    */
+	public void setNrOfComp(int nrOfComp) {
+		this.nrOfComp = nrOfComp;
+	}
+
+    /**
+    @return number of color components.
+    */
+	public int getNrOfColorComp() {
+		return nrOfColorComp;
+	}
+
+    /**
+    Sets number of color components.
+    */
+	public void setNrOfColorComp(int nrOfColorComp) {
+		this.nrOfColorComp = nrOfColorComp;
+	}
+
+    /**
+    @return transparency of the image.
+    */
+	public int getTransparency() {
+		return transparency;
+	}
+
+    /**
+    Sets image transparency.
+    */
+	public void setTransparency(int transparency) {
+		this.transparency = transparency;
+	}
+
+    /**
+    @return pixel size of the image.
+    */
+	public int getPixelSize() {
+		return pixelSize;
+	}
+
+    /**
+    Sets the pixel size of the image.
+    */
+	public void setPixelSize(int pixelSize) {
+		this.pixelSize = pixelSize;
+	}
+
+    /**
+    @return color space type of the image.
+    */
+	public int getColSpaceType() {
+		return colSpaceType;
+	}
+
+    /**
+    Sets color space type of the image.
+    */
+	public void setColSpaceType(int colSpaceType) {
+		this.colSpaceType = colSpaceType;
+	}
+
+    /**
+    @return orientation of the image.
+    */
+	public int getOrientation() {
+		return orientation;
+	}
+
+    /**
+    Sets orientation of the image.
+    */
+	public void setOrientation(int orientation) {
+		this.orientation = orientation;
+	}
 
     /**
         Constructor.
@@ -39,7 +190,7 @@ public class ImageMedia extends AbstractMedia
         super();
     }
 
-    /**
+	/**
         Constructor.
     */
     public ImageMedia( File instance )
