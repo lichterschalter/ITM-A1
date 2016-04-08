@@ -140,7 +140,7 @@ public class ImageMetadataGenerator
         int slash = Math.max(input.toString().lastIndexOf('/'), input.toString().lastIndexOf('\\'));
         int point = input.toString().lastIndexOf('.');
 
-        if ( point > slash ) {
+        if ( slash < point ) {
            imgType = input.toString().substring( point + 1 );
            media.addTag( imgType );
         }

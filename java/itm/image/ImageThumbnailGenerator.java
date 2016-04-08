@@ -1,5 +1,10 @@
 package itm.image;
 
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Graphics2D;
+import java.awt.image.BufferedImage;
+
 /*******************************************************************************
     This file is part of the ITM course 2016
     (c) University of Vienna 2009-2016
@@ -8,6 +13,9 @@ package itm.image;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.awt.FontMetrics;
+
+import javax.imageio.ImageIO;
 
 /**
     This class converts images of various formats to PNG thumbnails files.
@@ -107,10 +115,21 @@ public class ImageThumbnailGenerator
         //  Fill in your code here!
         // ***************************************************************
 
+        BufferedImage img;
+        
         // load the input image
+	    img = ImageIO.read(input);
+
         
         // add a watermark of your choice and paste it to the image
         // e.g. text or a graphic
+	    Graphics2D grafik = img.createGraphics();
+        grafik.drawImage(img, 0, 0, null);
+	    Font arial = new Font( "Arial", Font.ITALIC, 10 * img.getWidth() / 100 );
+	    grafik.setFont( arial );
+	    grafik.setColor(Color.WHITE);
+	    grafik.drawString( "Watermark", img.getWidth() / 4, img.getHeight() / 2 );
+	    grafik.dispose();
         
         // rotate by the given parameter the image - do not crop image parts!
 
@@ -120,7 +139,17 @@ public class ImageThumbnailGenerator
         // rotate you image by the given rotation parameter
         // save as extra file - say: don't return as output file
 
-        // encode and save the image  
+        // encode and save the image 
+        String imgType = "";
+        int slash = Math.max(input.toString().lastIndexOf('/'), input.toString().lastIndexOf('\\'));
+        int point = input.toString().lastIndexOf('.');
+        if ( point > slash ) {
+            imgType = input.toString().substring( point + 1 );
+        }else{
+        	imgType = "jpeg";
+        }
+        outputFile = new File( output.getAbsolutePath() + "/" + input.getName() + "." + imgType );
+        ImageIO.write( img, imgType, outputFile );
 
         return outputFile;
 
