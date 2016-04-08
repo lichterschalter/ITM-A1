@@ -3,6 +3,9 @@ package itm.image;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
+import java.awt.Image;
+import java.awt.geom.AffineTransform;
+import java.awt.image.AffineTransformOp;
 import java.awt.image.BufferedImage;
 
 /*******************************************************************************
@@ -115,30 +118,26 @@ public class ImageThumbnailGenerator
         //  Fill in your code here!
         // ***************************************************************
 
-        BufferedImage img;
+        BufferedImage img, imgRot;
         
         // load the input image
 	    img = ImageIO.read(input);
 
-        
         // add a watermark of your choice and paste it to the image
         // e.g. text or a graphic
 	    Graphics2D grafik = img.createGraphics();
-        grafik.drawImage(img, 0, 0, null);
 	    Font arial = new Font( "Arial", Font.ITALIC, 10 * img.getWidth() / 100 );
 	    grafik.setFont( arial );
 	    grafik.setColor(Color.WHITE);
 	    grafik.drawString( "Watermark", img.getWidth() / 4, img.getHeight() / 2 );
-	    grafik.dispose();
-        
-        // rotate by the given parameter the image - do not crop image parts!
-
+	
         // scale the image to a maximum of [ 200 w X 100 h ] pixels - do not distort!
         // if the image is smaller than [ 200 w X 100 h ] - print it on a [ dim X dim ] canvas!
-
-        // rotate you image by the given rotation parameter
-        // save as extra file - say: don't return as output file
-
+	    double ratio = (double) img.getWidth() / (double) img.getHeight();
+	    System.out.println( ratio );
+	    grafik.drawImage(img, 0, 0, 200, (int)(200 / ratio), new Color( 0, 0, 0 ), null);
+	    //img = new BufferedImage( 200, (int)(200 / ratio), 1 );
+	    
         // encode and save the image 
         String imgType = "";
         int slash = Math.max(input.toString().lastIndexOf('/'), input.toString().lastIndexOf('\\'));
@@ -150,6 +149,23 @@ public class ImageThumbnailGenerator
         }
         outputFile = new File( output.getAbsolutePath() + "/" + input.getName() + "." + imgType );
         ImageIO.write( img, imgType, outputFile );
+        
+        // rotate you image by the given rotation parameter
+        // save as extra file - say: don't return as output file
+        
+        // rotate by the given parameter the image - do not crop image parts!
+        imgRot = img;
+	    Graphics2D grafikRot = imgRot.createGraphics();
+	    AffineTransform transform = new AffineTransform();
+	    transform.rotate( Math.toRadians( 30 ) );
+	    grafikRot.setTransform( transform );
+	    grafikRot.drawImage(imgRot, null, 0, 0 );
+	    grafikRot.dispose();
+        
+        /*save the rotated image
+        File outputFileRot = new File( output.getAbsolutePath() + "/" + input.getName() + "-ROTATED-." + imgType );
+        ImageIO.write( imgRot, "png", outputFileRot );*/
+        
 
         return outputFile;
 
