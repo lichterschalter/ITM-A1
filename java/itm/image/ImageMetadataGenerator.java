@@ -161,12 +161,12 @@ public class ImageMetadataGenerator
         	media.setColSpaceType( img.getColorModel().getColorSpace().getType() );
         	media.setPixelSize( img.getColorModel().getPixelSize() );
         	media.setTransparency( img.getTransparency() );
-        	media.setPixelSize( img.getColorModel().getNumColorComponents() );
+        	media.setNrOfColorComp( img.getColorModel().getNumColorComponents() );
+        	media.setNrOfComp( img.getColorModel().getNumComponents() );
         }
 
         // store meta data
         StringBuffer strBuff = media.serializeObject();
-        outputFile = new File( "img_" + output.getAbsolutePath() + "/" + input.getName() + ".txt" );
         BufferedWriter buffWriter = new BufferedWriter( new FileWriter( outputFile ) );
         buffWriter.write( strBuff.toString() );
         buffWriter.flush();

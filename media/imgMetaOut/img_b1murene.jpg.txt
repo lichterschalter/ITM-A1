@@ -1,0 +1,13 @@
+type: image
+file: ../media/img/b1murene.jpg
+name: b1murene.jpg
+size: 289333 bytes (289kB)
+tags: image,jpg,
+width: 1862
+height: 1241
+numberOfComponents: 3
+numberOfColorComponents: 3
+transparency: 1
+pixelSize: 24
+colorSpaceType: TYPE_RGB
+orientation: 0

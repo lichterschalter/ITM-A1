@@ -1,0 +1,13 @@
+type: image
+file: ../media/img/b17maartent1427.gif
+name: b17maartent1427.gif
+size: 5622 bytes (5kB)
+tags: image,gif,
+width: 50
+height: 38
+numberOfComponents: 3
+numberOfColorComponents: 3
+transparency: 1
+pixelSize: 8
+colorSpaceType: TYPE_RGB
+orientation: 0
