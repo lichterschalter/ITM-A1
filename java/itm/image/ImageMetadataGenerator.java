@@ -6,11 +6,18 @@ package itm.image;
 *******************************************************************************/
 
 import itm.model.ImageMedia;
+
 import itm.model.MediaFactory;
 
+import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.FileWriter;
+import java.io.BufferedWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+
+import javax.imageio.ImageIO;
+
 
 /**
     This class reads images of various formats and stores some basic image meta data to text files.
@@ -118,22 +125,52 @@ public class ImageMetadataGenerator
         // ***************************************************************
         
         // load the input image
+        BufferedImage img;
+        img = ImageIO.read(input);
        
-        // set width and height of the image  
+        // set width and height of the image 
+        media.setWidth(img.getWidth());
+        media.setHeight(img.getHeight());
 
         // add a tag "image" to the media
+        media.addTag("image");
 
         // add a tag corresponding to the filename extension of the file to the media 
+        String imgType = "";
+        int slash = Math.max(input.toString().lastIndexOf('/'), input.toString().lastIndexOf('\\'));
+        int point = input.toString().lastIndexOf('.');
+
+        if ( point > slash ) {
+           imgType = input.toString().substring( point + 1 );
+           media.addTag( imgType );
+        }
         
         // set orientation
+        if( img.getHeight() > img.getWidth() ){
+        	media.setOrientation( 1 );
+        }else{
+        	media.setOrientation( 0 );
+        }
 
         // if there is a colormodel:
         // set color space type
         // set pixel size
         // set transparency
-        // set number of (color) components        
+        // set number of (color) components     
+        if( img.getColorModel() != null ){
+        	media.setColSpaceType( img.getColorModel().getColorSpace().getType() );
+        	media.setPixelSize( img.getColorModel().getPixelSize() );
+        	media.setTransparency( img.getTransparency() );
+        	media.setPixelSize( img.getColorModel().getNumColorComponents() );
+        }
 
         // store meta data
+        StringBuffer strBuff = media.serializeObject();
+        outputFile = new File( "img_" + output.getAbsolutePath() + "/" + input.getName() + ".txt" );
+        BufferedWriter buffWriter = new BufferedWriter( new FileWriter( outputFile ) );
+        buffWriter.write( strBuff.toString() );
+        buffWriter.flush();
+        buffWriter.close();
 
         return media;
     }

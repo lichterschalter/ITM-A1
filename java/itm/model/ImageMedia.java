@@ -142,14 +142,14 @@ public class ImageMedia extends AbstractMedia
 	}
 
     /**
-    @return pixel size of the image.
+    @return pixel size (bits per pixel) of the image.
     */
 	public int getPixelSize() {
 		return pixelSize;
 	}
 
     /**
-    Sets the pixel size of the image.
+    Sets the pixel size (bits per pixel) of the image.
     */
 	public void setPixelSize(int pixelSize) {
 		this.pixelSize = pixelSize;
