@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringReader;
 import java.io.StringWriter;
+import java.util.StringTokenizer;
 
 /**
     This class describes an image. 
@@ -282,6 +283,14 @@ public class ImageMedia extends AbstractMedia
         // ***************************************************************
 
         // print properties
+        out.println( "width: " + getWidth() );
+        out.println( "height: " + getHeight() );
+        out.println( "numberOfComponents: " + getNrOfComp() );
+        out.println( "numberOfColorComponents: " + getNrOfColorComp() );
+        out.println( "transparency: " + getTransparency() );
+        out.println( "pixelSize: " + getPixelSize() );
+        out.println( "colorSpaceType: " + serializeCSType( getColSpaceType() ) );
+        out.println( "orientation: " + getOrientation() );
 
         return data.getBuffer();
     }
@@ -306,7 +315,30 @@ public class ImageMedia extends AbstractMedia
             // ***************************************************************
             
             // read and set properties
-
+        	if ( line.startsWith( "width: " ) ) {
+                setWidth( Integer.parseInt(line.substring( "width: ".length() ) ) );
+                } else
+            if ( line.startsWith( "height: " ) ) {
+                setHeight( Integer.parseInt(line.substring( "height: ".length() ) ) );
+            	} else
+            if ( line.startsWith( "numberOfComponents: " ) ) {
+            	setNrOfComp( Integer.parseInt(line.substring( "numberOfComponents: ".length() ) ) );
+            	} else
+            if ( line.startsWith( "numberOfColorComponents: " ) ) {
+            	setNrOfColorComp( Integer.parseInt(line.substring( "numberOfColorComponents: ".length() ) ) );
+            	} else
+            if ( line.startsWith( "transparency: " ) ) {
+            	setTransparency( Integer.parseInt(line.substring( "transparency: ".length() ) ) );
+            	} else
+            if ( line.startsWith( "pixelSize: " ) ) {
+            	setPixelSize( Integer.parseInt(line.substring( "pixelSize: ".length() ) ) );
+            	} else
+            if ( line.startsWith( "colorSpaceType: " ) ) {
+            	setColSpaceType( Integer.parseInt(line.substring( "colorSpaceType: ".length() ) ) );
+            	} else
+            if ( line.startsWith( "orientation: " ) ) {
+            	setOrientation( Integer.parseInt(line.substring( "orientation: ".length() ) ) );
+            }
         }
     }
 }
