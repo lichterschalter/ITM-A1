@@ -118,24 +118,41 @@ public class ImageThumbnailGenerator
         //  Fill in your code here!
         // ***************************************************************
 
-        BufferedImage img, imgRot;
+        BufferedImage img;
         
         // load the input image
 	    img = ImageIO.read(input);
+	    
+        BufferedImage imgNew;	    
+	    Graphics2D grafik;
+	    
+	    //rotate the image if it is not in landscape-orientation
+	    if( img.getHeight() > img.getWidth() ){
+	    	imgNew = new BufferedImage( img.getHeight(), img.getWidth(), img.getType() );
+	    	grafik = imgNew.createGraphics();
+	    	AffineTransform affineRotation = AffineTransform.getRotateInstance( Math.toRadians (90), img.getWidth() / 1.5, img.getWidth() / 1.5 );
+	    	AffineTransformOp rotationOp = new AffineTransformOp( affineRotation, AffineTransformOp.TYPE_BILINEAR );
+	    	grafik.drawImage( rotationOp.filter(img, null), 0, 0, null );
+	    }else{
+	    	imgNew = new BufferedImage( img.getWidth(), img.getHeight(), img.getType() );
+	    	grafik = imgNew.createGraphics();
+	    	AffineTransform affineRotation = AffineTransform.getRotateInstance( Math.toRadians (0), img.getWidth() / 2, img.getHeight() / 2 );
+	    	AffineTransformOp rotationOp = new AffineTransformOp( affineRotation, AffineTransformOp.TYPE_BILINEAR );
+	    	grafik.drawImage( rotationOp.filter(img, null), 0, 0, null );
+	    }
 
         // add a watermark of your choice and paste it to the image
         // e.g. text or a graphic
-	    Graphics2D grafik = img.createGraphics();
-	    Font arial = new Font( "Arial", Font.ITALIC, 10 * img.getWidth() / 100 );
+	    Font arial = new Font( "Arial", Font.ITALIC, 10 * imgNew.getWidth() / 100 );
 	    grafik.setFont( arial );
 	    grafik.setColor(Color.WHITE);
-	    grafik.drawString( "Watermark", img.getWidth() / 4, img.getHeight() / 2 );
+	    grafik.drawString( "Watermark", imgNew.getWidth() / 4, imgNew.getHeight() / 2 );
 	
         // scale the image to a maximum of [ 200 w X 100 h ] pixels - do not distort!
         // if the image is smaller than [ 200 w X 100 h ] - print it on a [ dim X dim ] canvas!
-	    double ratio = (double) img.getWidth() / (double) img.getHeight();
+	    double ratio = (double) imgNew.getWidth() / (double) imgNew.getHeight();
 	    System.out.println( ratio );
-	    grafik.drawImage(img, 0, 0, 200, (int)(200 / ratio), new Color( 0, 0, 0 ), null);
+	    grafik.drawImage(imgNew, 0, 0, 200, (int)(200 / ratio), new Color( 0, 0, 0 ), null);
 	    //img = new BufferedImage( 200, (int)(200 / ratio), 1 );
 	    
         // encode and save the image 
@@ -148,19 +165,19 @@ public class ImageThumbnailGenerator
         	imgType = "jpeg";
         }
         outputFile = new File( output.getAbsolutePath() + "/" + input.getName() + "." + imgType );
-        ImageIO.write( img, imgType, outputFile );
+        ImageIO.write( imgNew, imgType, outputFile );
         
         // rotate you image by the given rotation parameter
         // save as extra file - say: don't return as output file
         
-        // rotate by the given parameter the image - do not crop image parts!
+        /*rotate by the given parameter the image - do not crop image parts!
         imgRot = img;
 	    Graphics2D grafikRot = imgRot.createGraphics();
 	    AffineTransform transform = new AffineTransform();
 	    transform.rotate( Math.toRadians( 30 ) );
 	    grafikRot.setTransform( transform );
 	    grafikRot.drawImage(imgRot, null, 0, 0 );
-	    grafikRot.dispose();
+	    grafikRot.dispose();*/
         
         /*save the rotated image
         File outputFileRot = new File( output.getAbsolutePath() + "/" + input.getName() + "-ROTATED-." + imgType );
