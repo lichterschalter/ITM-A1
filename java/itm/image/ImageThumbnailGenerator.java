@@ -150,8 +150,10 @@ public class ImageThumbnailGenerator
         // if the image is smaller than [ 200 w X 100 h ] - print it on a [ dim X dim ] canvas!
 	    double ratio = (double) imgNew.getWidth() / (double) imgNew.getHeight();
 	    System.out.println( ratio );
-	    grafik.drawImage(imgNew, 0, 0, 200, (int)(200 / ratio), new Color( 0, 0, 0 ), null);
-	    //img = new BufferedImage( 200, (int)(200 / ratio), 1 );
+    	BufferedImage imgNewNew = new BufferedImage( 200, (int) (200 / ratio), img.getType() );
+    	grafik = imgNewNew.createGraphics();
+    	grafik.drawImage( imgNew, 0, 0, 200, (int)(200 / ratio), new Color( 0, 0, 0 ), null );
+	    //grafik.drawImage(imgNew, 0, 0, 200, (int)(200 / ratio), new Color( 0, 0, 0 ), null);
 	    
         // encode and save the image 
         String imgType = "";
@@ -163,7 +165,7 @@ public class ImageThumbnailGenerator
         	imgType = "jpeg";
         }
         outputFile = new File( output.getAbsolutePath() + "/" + input.getName() + "." + imgType );
-        ImageIO.write( imgNew, imgType, outputFile );
+        ImageIO.write( imgNewNew, imgType, outputFile );
         
         // rotate you image by the given rotation parameter
         // save as extra file - say: don't return as output file
