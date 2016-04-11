@@ -130,15 +130,13 @@ public class ImageThumbnailGenerator
 	    if( img.getHeight() > img.getWidth() ){
 	    	imgNew = new BufferedImage( img.getHeight(), img.getWidth(), img.getType() );
 	    	grafik = imgNew.createGraphics();
-	    	AffineTransform affineRotation = AffineTransform.getRotateInstance( Math.toRadians (90), img.getWidth() / 1.5, img.getWidth() / 1.5 );
+	    	AffineTransform affineRotation = AffineTransform.getRotateInstance( Math.toRadians (90), imgNew.getWidth() / 2, imgNew.getWidth() / 2 );
 	    	AffineTransformOp rotationOp = new AffineTransformOp( affineRotation, AffineTransformOp.TYPE_BILINEAR );
 	    	grafik.drawImage( rotationOp.filter(img, null), 0, 0, null );
 	    }else{
 	    	imgNew = new BufferedImage( img.getWidth(), img.getHeight(), img.getType() );
 	    	grafik = imgNew.createGraphics();
-	    	AffineTransform affineRotation = AffineTransform.getRotateInstance( Math.toRadians (0), img.getWidth() / 2, img.getHeight() / 2 );
-	    	AffineTransformOp rotationOp = new AffineTransformOp( affineRotation, AffineTransformOp.TYPE_BILINEAR );
-	    	grafik.drawImage( rotationOp.filter(img, null), 0, 0, null );
+	    	grafik.drawImage( img, 0, 0, null );
 	    }
 
         // add a watermark of your choice and paste it to the image
