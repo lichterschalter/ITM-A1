@@ -175,14 +175,7 @@ public class ImageThumbnailGenerator
 	    }
 	    
         // encode and save the image 
-        String imgFormat = "";
-        int slash = Math.max(input.toString().lastIndexOf('/'), input.toString().lastIndexOf('\\'));
-        int point = input.toString().lastIndexOf('.');
-        if ( point > slash ) {
-        	imgFormat = input.toString().substring( point + 1 );
-        }else{
-        	imgFormat = "jpeg";
-        }
+        String imgFormat = "png";
         outputFile = new File( output.getAbsolutePath() + "/" + input.getName() + "." + imgFormat );
         ImageIO.write( imgNewNew, imgFormat, outputFile );
         
@@ -198,19 +191,17 @@ public class ImageThumbnailGenerator
         
         // rotate you image by the given rotation parameter
         // save as extra file - say: don't return as output file
+        //rotate by the given parameter the image - do not crop image parts!
+    	BufferedImage imgRotated = new BufferedImage( imgNewNew.getWidth(), imgNewNew.getHeight(), imgType );
+    	grafik = imgRotated.createGraphics();
+    	AffineTransform affineRotation = AffineTransform.getRotateInstance( Math.toRadians (rotation), imgNewNew.getWidth() / 2, imgNewNew.getHeight() / 2 ); 	
+    	AffineTransformOp rotationOp = new AffineTransformOp( affineRotation, AffineTransformOp.TYPE_BILINEAR );
+    	grafik.drawImage( rotationOp.filter( imgNewNew, null), 0, 0, null );
+
         
-        /*rotate by the given parameter the image - do not crop image parts!
-        imgRot = img;
-	    Graphics2D grafikRot = imgRot.createGraphics();
-	    AffineTransform transform = new AffineTransform();
-	    transform.rotate( Math.toRadians( 30 ) );
-	    grafikRot.setTransform( transform );
-	    grafikRot.drawImage(imgRot, null, 0, 0 );
-	    grafikRot.dispose();*/
-        
-        /*save the rotated image
+        //save the rotated image
         File outputFileRot = new File( output.getAbsolutePath() + "/" + input.getName() + "-ROTATED-." + imgType );
-        ImageIO.write( imgRot, "png", outputFileRot );*/
+        ImageIO.write( imgRotated, "png", outputFileRot );
         
 
         return outputFile;
