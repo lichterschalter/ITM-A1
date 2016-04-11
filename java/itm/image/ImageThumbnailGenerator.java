@@ -1,6 +1,7 @@
 package itm.image;
 
 import java.awt.Color;
+import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.Graphics2D;
 import java.awt.Image;
@@ -19,6 +20,9 @@ import java.util.ArrayList;
 import java.awt.FontMetrics;
 
 import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
 
 /**
     This class converts images of various formats to PNG thumbnails files.
@@ -125,16 +129,26 @@ public class ImageThumbnailGenerator
 	    
         BufferedImage imgNew;	    
 	    Graphics2D grafik;
+	    int imgType = img.getType();
+	    switch (imgType) {
+	        case BufferedImage.TYPE_BYTE_INDEXED:
+	        case BufferedImage.TYPE_BYTE_BINARY:
+	            imgType = BufferedImage.TYPE_INT_RGB;
+	            break;
+	        case BufferedImage.TYPE_CUSTOM:
+            	imgType = BufferedImage.TYPE_INT_RGB;
+            break;
+	    }
 	    
 	    //rotate the image if it is not in landscape-orientation
 	    if( img.getHeight() > img.getWidth() ){
-	    	imgNew = new BufferedImage( img.getHeight(), img.getWidth(), img.getType() );
+	    	imgNew = new BufferedImage( img.getHeight(), img.getWidth(), imgType );
 	    	grafik = imgNew.createGraphics();
 	    	AffineTransform affineRotation = AffineTransform.getRotateInstance( Math.toRadians (90), imgNew.getWidth() / 2, imgNew.getWidth() / 2 );
 	    	AffineTransformOp rotationOp = new AffineTransformOp( affineRotation, AffineTransformOp.TYPE_BILINEAR );
 	    	grafik.drawImage( rotationOp.filter(img, null), 0, 0, null );
 	    }else{
-	    	imgNew = new BufferedImage( img.getWidth(), img.getHeight(), img.getType() );
+	    	imgNew = new BufferedImage( img.getWidth(), img.getHeight(), imgType );
 	    	grafik = imgNew.createGraphics();
 	    	grafik.drawImage( img, 0, 0, null );
 	    }
@@ -149,8 +163,8 @@ public class ImageThumbnailGenerator
         // scale the image to a maximum of [ 200 w X 100 h ] pixels - do not distort!
         // if the image is smaller than [ 200 w X 100 h ] - print it on a [ dim X dim ] canvas!
 	    double ratio = (double) imgNew.getWidth() / (double) imgNew.getHeight();
-	    System.out.println( ratio );
-    	BufferedImage imgNewNew = new BufferedImage( 200, (int) (200 / ratio), img.getType() );
+	    System.out.println( img.getType() );
+    	BufferedImage imgNewNew = new BufferedImage( 200, (int) (200 / ratio), imgType );
     	grafik = imgNewNew.createGraphics();
 		if( imgNew.getWidth() > 200 ){
 	    	grafik.drawImage( imgNew, 0, 0, 200, (int)(200 / ratio), new Color( 0, 0, 0 ), null );
@@ -161,16 +175,26 @@ public class ImageThumbnailGenerator
 	    }
 	    
         // encode and save the image 
-        String imgType = "";
+        String imgFormat = "";
         int slash = Math.max(input.toString().lastIndexOf('/'), input.toString().lastIndexOf('\\'));
         int point = input.toString().lastIndexOf('.');
         if ( point > slash ) {
-            imgType = input.toString().substring( point + 1 );
+        	imgFormat = input.toString().substring( point + 1 );
         }else{
-        	imgType = "jpeg";
+        	imgFormat = "jpeg";
         }
-        outputFile = new File( output.getAbsolutePath() + "/" + input.getName() + "." + imgType );
-        ImageIO.write( imgNewNew, imgType, outputFile );
+        outputFile = new File( output.getAbsolutePath() + "/" + input.getName() + "." + imgFormat );
+        ImageIO.write( imgNewNew, imgFormat, outputFile );
+        
+        /*
+	    JFrame frame = new JFrame();
+	    frame.getContentPane().setLayout(new FlowLayout());
+	    frame.getContentPane().add(new JLabel(new ImageIcon(img)));
+	    frame.getContentPane().add(new JLabel(new ImageIcon(imgNew)));
+	    frame.getContentPane().add(new JLabel(new ImageIcon(imgNewNew)));
+	    frame.pack();
+	    frame.setVisible(true);
+	    */
         
         // rotate you image by the given rotation parameter
         // save as extra file - say: don't return as output file
