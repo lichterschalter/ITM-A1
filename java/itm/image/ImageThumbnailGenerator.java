@@ -152,8 +152,13 @@ public class ImageThumbnailGenerator
 	    System.out.println( ratio );
     	BufferedImage imgNewNew = new BufferedImage( 200, (int) (200 / ratio), img.getType() );
     	grafik = imgNewNew.createGraphics();
-    	grafik.drawImage( imgNew, 0, 0, 200, (int)(200 / ratio), new Color( 0, 0, 0 ), null );
-	    //grafik.drawImage(imgNew, 0, 0, 200, (int)(200 / ratio), new Color( 0, 0, 0 ), null);
+		if( imgNew.getWidth() > 200 ){
+	    	grafik.drawImage( imgNew, 0, 0, 200, (int)(200 / ratio), new Color( 0, 0, 0 ), null );
+	    }else{
+	    	int xPosCenter = ( imgNewNew.getWidth() / 2 ) - ( imgNew.getWidth() / 2 );
+	    	int yPosCenter = ( imgNewNew.getHeight() / 2 ) - ( imgNew.getHeight() / 2 );
+	    	grafik.drawImage( imgNew, xPosCenter, yPosCenter, imgNew.getWidth(), (int)(imgNew.getWidth() / ratio), new Color( 0, 0, 0 ), null );
+	    }
 	    
         // encode and save the image 
         String imgType = "";
