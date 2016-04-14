@@ -179,22 +179,16 @@ public class ImageThumbnailGenerator
         outputFile = new File( output.getAbsolutePath() + "/" + input.getName() + "." + imgFormat );
         ImageIO.write( imgNewNew, imgFormat, outputFile );
         
-        /*
-	    JFrame frame = new JFrame();
-	    frame.getContentPane().setLayout(new FlowLayout());
-	    frame.getContentPane().add(new JLabel(new ImageIcon(img)));
-	    frame.getContentPane().add(new JLabel(new ImageIcon(imgNew)));
-	    frame.getContentPane().add(new JLabel(new ImageIcon(imgNewNew)));
-	    frame.pack();
-	    frame.setVisible(true);
-	    */
-        
         // rotate you image by the given rotation parameter
         // save as extra file - say: don't return as output file
         //rotate by the given parameter the image - do not crop image parts!
     	BufferedImage imgRotated = new BufferedImage( imgNewNew.getWidth(), imgNewNew.getHeight(), imgType );
-    	grafik = imgRotated.createGraphics();
-    	AffineTransform affineRotation = AffineTransform.getRotateInstance( Math.toRadians (rotation), imgNewNew.getWidth() / 2, imgNewNew.getHeight() / 2 ); 	
+    	grafik = imgRotated.createGraphics();	
+    	AffineTransform scale = AffineTransform.getScaleInstance( 0.5, 0.5 ); 
+    	AffineTransform translate = AffineTransform.getTranslateInstance( imgNewNew.getWidth() / 2, imgNewNew.getHeight() / 2 );
+    	AffineTransform affineRotation = AffineTransform.getRotateInstance( Math.toRadians (rotation), imgNewNew.getWidth() / 2, imgNewNew.getHeight() / 2 ); 
+    	affineRotation.concatenate( scale );
+    	affineRotation.concatenate( translate );  	
     	AffineTransformOp rotationOp = new AffineTransformOp( affineRotation, AffineTransformOp.TYPE_BILINEAR );
     	grafik.drawImage( rotationOp.filter( imgNewNew, null), 0, 0, null );
 

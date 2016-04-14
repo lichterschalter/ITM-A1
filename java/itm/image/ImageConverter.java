@@ -114,10 +114,10 @@ public class ImageConverter
         //  Fill in your code here!
         // ***************************************************************
 
-        BufferedImage img;
+        BufferedImage bild;
 
 	    // load the input image
-	    img = ImageIO.read(input);
+        bild = ImageIO.read(input);
 	    
 	    // encode and save the image 
 	    if( targetFormat.equals( "JPEG" )){
@@ -128,11 +128,11 @@ public class ImageConverter
 	        ImageWriteParam parameter = iw.getDefaultWriteParam();
 	        parameter.setCompressionMode( ImageWriteParam.MODE_EXPLICIT );
 	        parameter.setCompressionQuality( quality );
-	        IIOImage iioimage = new IIOImage( img, null, null);
+	        IIOImage iioimage = new IIOImage( bild, null, null);
 	    	iw.write(null, iioimage, parameter );
 	    }else{
 	        outputFile = new File(output.getAbsolutePath() + "/" + input.getName() + "." + targetFormat.toLowerCase());
-	        ImageIO.write(img, targetFormat, outputFile); 
+	        ImageIO.write(bild, targetFormat, outputFile); 
 	    }
 
         return outputFile;
