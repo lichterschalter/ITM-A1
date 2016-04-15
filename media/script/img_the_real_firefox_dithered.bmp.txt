@@ -1,0 +1,13 @@
+type: image
+file: media/img/the_real_firefox_dithered.bmp
+name: the_real_firefox_dithered.bmp
+size: 88778 bytes (88kB)
+tags: image,bmp,
+width: 513
+height: 341
+numberOfComponents: 3
+numberOfColorComponents: 3
+transparency: 1
+pixelSize: 4
+colorSpaceType: TYPE_RGB
+orientation: 0

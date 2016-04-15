@@ -1,5 +1,9 @@
 package itm.image;
 
+import java.awt.Color;
+import java.awt.image.BufferedImage;
+import java.awt.image.ColorModel;
+
 /*******************************************************************************
     This file is part of the ITM course 2016
     (c) University of Vienna 2009-2016
@@ -9,6 +13,10 @@ package itm.image;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+
+import javax.imageio.ImageIO;
+
+import itm.util.Histogram;
 
 /**
     This class creates color and grayscale histograms for various images.
@@ -94,22 +102,50 @@ public class ImageHistogramGenerator
         // ***************************************************************
         //  Fill in your code here!
         // ***************************************************************
-
+		
         // load the input image
+		BufferedImage img = ImageIO.read(input);
 		
 		// get the color model of the image and the amount of color components
+		ColorModel colorModel = img.getColorModel();
+		int[] colorComponents = colorModel.getComponentSize();
 		
 		// initiate a Histogram[color components] [bins]
+		Histogram hist = new Histogram( colorComponents.length, bins );
 		
 		// create a histogram array histArray[color components][bins]
+		int[][] histData = new int[colorComponents.length][bins];
 		
 		// read the pixel values and extract the color information
+		for (int i = 0; i < img.getWidth(); i++) {
+			for (int j = 0; j < img.getHeight(); j++) {
+				if( colorComponents.length < 1 || colorComponents.length == 2 ){
+					throw new IllegalArgumentException("Less then one color component!");
+				}
+				//grayscale
+				if( colorComponents.length == 1 ){
+					int color = img.getRGB( i, j );
+					histData[0][color / ( 260 / bins )]++;
+				}
+				//rgb
+				if( colorComponents.length >= 3 ){
+					Color pixelCol = new Color(img.getRGB( i, j ) );
+					histData[0][pixelCol.getRed() / ( 260 / bins )]++;
+					histData[1][pixelCol.getBlue() / ( 260 / bins )]++;
+					histData[2][pixelCol.getGreen() / ( 260 / bins )]++;
+				}
+			}
+		}
+		
 		
 		// fill the array setHistogram(histArray)
+		hist.setHistogram(histData);
 		
 		// plot the histogram, try different dimensions for better visualization
+		BufferedImage outputHist = hist.plotHistogram( 512, 256 );
 		
         // encode and save the image as png
+        ImageIO.write( outputHist, "png", outputFile );		
          
         return outputFile;
     }

@@ -1,0 +1,13 @@
+type: image
+file: media/img/b17barb026_dithered.gif
+name: b17barb026_dithered.gif
+size: 323483 bytes (323kB)
+tags: image,gif,
+width: 1024
+height: 768
+numberOfComponents: 3
+numberOfColorComponents: 3
+transparency: 1
+pixelSize: 8
+colorSpaceType: TYPE_RGB
+orientation: 0

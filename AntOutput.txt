@@ -13,3 +13,723 @@ Main targets:
  compile                  compile the source
  javadoc                  creates the javadoc
 Default target: ImageConverter
+
+clean-thumbs:
+     [echo] Deleting thumbnail directory /home/rustong_pu/Programming/ITM - A1/thumbnails and /home/rustong_pu/Programming/ITM - A1/webapps/itm/media/md if existing
+
+clean-build:
+     [echo] Deleting build directory /home/rustong_pu/Programming/ITM - A1/build and /home/rustong_pu/Programming/ITM - A1/webapps/itm/WEB-INF/classes if existing
+   [delete] Deleting directory /home/rustong_pu/Programming/ITM - A1/build
+
+clean:
+
+BUILD SUCCESSFUL
+
+init:
+    [mkdir] Created dir: /home/rustong_pu/Programming/ITM - A1/build
+
+compile:
+    [javac] Compiling 9 source files to /home/rustong_pu/Programming/ITM - A1/build
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageConverter:
+     [java] converting /home/rustong_pu/Programming/ITM - A1/java to /home/rustong_pu/Programming/ITM - A1/out
+     [java] Error converting java/itm : java.io.IOException: Input file java/itm is a directory!
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageConverter:
+     [java] converting /home/rustong_pu/Programming/ITM - A1/java to /home/rustong_pu/Programming/ITM - A1/out
+     [java] Error converting java/itm : java.io.IOException: Input file java/itm is a directory!
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageConverter:
+     [java] converting /home/rustong_pu/Programming/ITM - A1/java to /home/rustong_pu/Programming/ITM - A1/out
+     [java] Error converting java/itm : java.io.IOException: Input file java/itm is a directory!
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageConverter:
+     [java] converting /home/rustong_pu/Programming/ITM - A1/java to /home/rustong_pu/Programming/ITM - A1/out
+     [java] Error converting java/itm : java.io.IOException: Input file java/itm is a directory!
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageConverter:
+     [java] converting /home/rustong_pu/Programming/ITM - A1/java to /home/rustong_pu/Programming/ITM - A1/out
+     [java] Error converting java/itm : java.io.IOException: Input file java/itm is a directory!
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageThumbnailGenerator:
+     [java] Error converting java : java.io.IOException: Input file java/itm is a directory!
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageMetadataGenerator:
+     [java] Error converting java : java.io.IOException: Input file java/itm is a directory!
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageHistogramGenerator:
+     [java] Error converting java : java.io.IOException: Input file java/itm is a directory!
+
+BUILD SUCCESSFUL
+
+clean-thumbs:
+     [echo] Deleting thumbnail directory /home/rustong_pu/Programming/ITM - A1/thumbnails and /home/rustong_pu/Programming/ITM - A1/webapps/itm/media/md if existing
+
+clean-build:
+     [echo] Deleting build directory /home/rustong_pu/Programming/ITM - A1/build and /home/rustong_pu/Programming/ITM - A1/webapps/itm/WEB-INF/classes if existing
+   [delete] Deleting directory /home/rustong_pu/Programming/ITM - A1/build
+
+clean:
+
+BUILD SUCCESSFUL
+
+init:
+    [mkdir] Created dir: /home/rustong_pu/Programming/ITM - A1/build
+
+compile:
+    [javac] Compiling 9 source files to /home/rustong_pu/Programming/ITM - A1/build
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageConverter:
+     [java] converting /home/rustong_pu/Programming/ITM - A1/java/itm to /home/rustong_pu/Programming/ITM - A1/out
+     [java] Error converting java/itm/util : java.io.IOException: Input file java/itm/util is a directory!
+     [java] Error converting java/itm/model : java.io.IOException: Input file java/itm/model is a directory!
+     [java] Error converting java/itm/image : java.io.IOException: Input file java/itm/image is a directory!
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageConverter:
+     [java] converting /home/rustong_pu/Programming/ITM - A1/java/itm to /home/rustong_pu/Programming/ITM - A1/out
+     [java] Error converting java/itm/util : java.io.IOException: Input file java/itm/util is a directory!
+     [java] Error converting java/itm/model : java.io.IOException: Input file java/itm/model is a directory!
+     [java] Error converting java/itm/image : java.io.IOException: Input file java/itm/image is a directory!
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageConverter:
+     [java] converting /home/rustong_pu/Programming/ITM - A1/java/itm to /home/rustong_pu/Programming/ITM - A1/out
+     [java] Error converting java/itm/util : java.io.IOException: Input file java/itm/util is a directory!
+     [java] Error converting java/itm/model : java.io.IOException: Input file java/itm/model is a directory!
+     [java] Error converting java/itm/image : java.io.IOException: Input file java/itm/image is a directory!
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageConverter:
+     [java] converting /home/rustong_pu/Programming/ITM - A1/java/itm to /home/rustong_pu/Programming/ITM - A1/out
+     [java] Error converting java/itm/util : java.io.IOException: Input file java/itm/util is a directory!
+     [java] Error converting java/itm/model : java.io.IOException: Input file java/itm/model is a directory!
+     [java] Error converting java/itm/image : java.io.IOException: Input file java/itm/image is a directory!
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageConverter:
+     [java] converting /home/rustong_pu/Programming/ITM - A1/java/itm to /home/rustong_pu/Programming/ITM - A1/out
+     [java] Error converting java/itm/util : java.io.IOException: Input file java/itm/util is a directory!
+     [java] Error converting java/itm/model : java.io.IOException: Input file java/itm/model is a directory!
+     [java] Error converting java/itm/image : java.io.IOException: Input file java/itm/image is a directory!
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageThumbnailGenerator:
+     [java] Error converting java/itm : java.io.IOException: Input file java/itm/util is a directory!
+     [java] Error converting java/itm : java.io.IOException: Input file java/itm/model is a directory!
+     [java] Error converting java/itm : java.io.IOException: Input file java/itm/image is a directory!
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageMetadataGenerator:
+     [java] Error converting java/itm : java.io.IOException: Input file java/itm/util is a directory!
+     [java] Error converting java/itm : java.io.IOException: Input file java/itm/model is a directory!
+     [java] Error converting java/itm : java.io.IOException: Input file java/itm/image is a directory!
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageHistogramGenerator:
+     [java] Error converting java/itm : java.io.IOException: Input file java/itm/util is a directory!
+     [java] Error converting java/itm : java.io.IOException: Input file java/itm/model is a directory!
+     [java] Error converting java/itm : java.io.IOException: Input file java/itm/image is a directory!
+
+BUILD SUCCESSFUL
+
+clean-thumbs:
+     [echo] Deleting thumbnail directory /home/rustong_pu/Programming/ITM - A1/thumbnails and /home/rustong_pu/Programming/ITM - A1/webapps/itm/media/md if existing
+
+clean-build:
+     [echo] Deleting build directory /home/rustong_pu/Programming/ITM - A1/build and /home/rustong_pu/Programming/ITM - A1/webapps/itm/WEB-INF/classes if existing
+   [delete] Deleting directory /home/rustong_pu/Programming/ITM - A1/build
+
+clean:
+
+BUILD SUCCESSFUL
+
+init:
+    [mkdir] Created dir: /home/rustong_pu/Programming/ITM - A1/build
+
+compile:
+    [javac] Compiling 9 source files to /home/rustong_pu/Programming/ITM - A1/build
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageConverter:
+     [java] converting /home/rustong_pu/Programming/ITM - A1/java/itm/image to /home/rustong_pu/Programming/ITM - A1/out
+     [java] Error converting java/itm/image/ImageMetadataGenerator.java : java.lang.IllegalArgumentException: image == null!
+     [java] Error converting java/itm/image/ImageHistogramGenerator.java : java.lang.IllegalArgumentException: image == null!
+     [java] Error converting java/itm/image/ImageThumbnailGenerator.java : java.lang.IllegalArgumentException: image == null!
+     [java] Error converting java/itm/image/ImageConverter.java : java.lang.IllegalArgumentException: image == null!
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageConverter:
+     [java] converting /home/rustong_pu/Programming/ITM - A1/java/itm/image to /home/rustong_pu/Programming/ITM - A1/out
+     [java] Error converting java/itm/image/ImageMetadataGenerator.java : java.lang.IllegalArgumentException: image == null!
+     [java] Error converting java/itm/image/ImageHistogramGenerator.java : java.lang.IllegalArgumentException: image == null!
+     [java] Error converting java/itm/image/ImageThumbnailGenerator.java : java.lang.IllegalArgumentException: image == null!
+     [java] Error converting java/itm/image/ImageConverter.java : java.lang.IllegalArgumentException: image == null!
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageConverter:
+     [java] converting /home/rustong_pu/Programming/ITM - A1/java/itm/image to /home/rustong_pu/Programming/ITM - A1/out
+     [java] Error converting java/itm/image/ImageMetadataGenerator.java : java.lang.IllegalArgumentException: image == null!
+     [java] Error converting java/itm/image/ImageHistogramGenerator.java : java.lang.IllegalArgumentException: image == null!
+     [java] Error converting java/itm/image/ImageThumbnailGenerator.java : java.lang.IllegalArgumentException: image == null!
+     [java] Error converting java/itm/image/ImageConverter.java : java.lang.IllegalArgumentException: image == null!
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageConverter:
+     [java] converting /home/rustong_pu/Programming/ITM - A1/java/itm/image to /home/rustong_pu/Programming/ITM - A1/out
+     [java] Error converting java/itm/image/ImageMetadataGenerator.java : java.lang.IllegalArgumentException: image == null!
+     [java] Error converting java/itm/image/ImageHistogramGenerator.java : java.lang.IllegalArgumentException: image == null!
+     [java] Error converting java/itm/image/ImageThumbnailGenerator.java : java.lang.IllegalArgumentException: image == null!
+     [java] Error converting java/itm/image/ImageConverter.java : java.lang.IllegalArgumentException: image == null!
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageConverter:
+     [java] converting /home/rustong_pu/Programming/ITM - A1/java/itm/image to /home/rustong_pu/Programming/ITM - A1/out
+     [java] Error converting java/itm/image/ImageMetadataGenerator.java : java.lang.IllegalArgumentException: image == null!
+     [java] Error converting java/itm/image/ImageHistogramGenerator.java : java.lang.IllegalArgumentException: image == null!
+     [java] Error converting java/itm/image/ImageThumbnailGenerator.java : java.lang.IllegalArgumentException: image == null!
+     [java] Error converting java/itm/image/ImageConverter.java : java.lang.IllegalArgumentException: image == null!
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageThumbnailGenerator:
+     [java] Error converting java/itm/image : java.lang.NullPointerException
+     [java] Error converting java/itm/image : java.lang.NullPointerException
+     [java] Error converting java/itm/image : java.lang.NullPointerException
+     [java] Error converting java/itm/image : java.lang.NullPointerException
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageMetadataGenerator:
+     [java] Error converting java/itm/image : java.io.IOException: Could not determine what object to create from filename extension java
+     [java] Error converting java/itm/image : java.io.IOException: Could not determine what object to create from filename extension java
+     [java] Error converting java/itm/image : java.io.IOException: Could not determine what object to create from filename extension java
+     [java] Error converting java/itm/image : java.io.IOException: Could not determine what object to create from filename extension java
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageHistogramGenerator:
+     [java] converted java/itm/image/ImageMetadataGenerator.java to out/ImageMetadataGenerator.java.hist.png
+     [java] converted java/itm/image/ImageHistogramGenerator.java to out/ImageHistogramGenerator.java.hist.png
+     [java] converted java/itm/image/ImageThumbnailGenerator.java to out/ImageThumbnailGenerator.java.hist.png
+     [java] converted java/itm/image/ImageConverter.java to out/ImageConverter.java.hist.png
+
+BUILD SUCCESSFUL
+
+clean-thumbs:
+     [echo] Deleting thumbnail directory /home/rustong_pu/Programming/ITM - A1/thumbnails and /home/rustong_pu/Programming/ITM - A1/webapps/itm/media/md if existing
+
+clean-build:
+     [echo] Deleting build directory /home/rustong_pu/Programming/ITM - A1/build and /home/rustong_pu/Programming/ITM - A1/webapps/itm/WEB-INF/classes if existing
+   [delete] Deleting directory /home/rustong_pu/Programming/ITM - A1/build
+
+clean:
+
+BUILD SUCCESSFUL
+
+init:
+    [mkdir] Created dir: /home/rustong_pu/Programming/ITM - A1/build
+
+compile:
+    [javac] Compiling 9 source files to /home/rustong_pu/Programming/ITM - A1/build
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageConverter:
+     [java] converting /home/rustong_pu/Programming/ITM - A1/java/itm/image to /home/rustong_pu/Programming/ITM - A1/out
+     [java] Error converting java/itm/image/ImageMetadataGenerator.java : java.lang.IllegalArgumentException: image == null!
+     [java] Error converting java/itm/image/ImageHistogramGenerator.java : java.lang.IllegalArgumentException: image == null!
+     [java] Error converting java/itm/image/ImageThumbnailGenerator.java : java.lang.IllegalArgumentException: image == null!
+     [java] Error converting java/itm/image/ImageConverter.java : java.lang.IllegalArgumentException: image == null!
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageConverter:
+     [java] converting /home/rustong_pu/Programming/ITM - A1/java/itm/image to /home/rustong_pu/Programming/ITM - A1/out
+     [java] Error converting java/itm/image/ImageMetadataGenerator.java : java.lang.IllegalArgumentException: image == null!
+     [java] Error converting java/itm/image/ImageHistogramGenerator.java : java.lang.IllegalArgumentException: image == null!
+     [java] Error converting java/itm/image/ImageThumbnailGenerator.java : java.lang.IllegalArgumentException: image == null!
+     [java] Error converting java/itm/image/ImageConverter.java : java.lang.IllegalArgumentException: image == null!
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageConverter:
+     [java] converting /home/rustong_pu/Programming/ITM - A1/java/itm/image to /home/rustong_pu/Programming/ITM - A1/out
+     [java] Error converting java/itm/image/ImageMetadataGenerator.java : java.lang.IllegalArgumentException: image == null!
+     [java] Error converting java/itm/image/ImageHistogramGenerator.java : java.lang.IllegalArgumentException: image == null!
+     [java] Error converting java/itm/image/ImageThumbnailGenerator.java : java.lang.IllegalArgumentException: image == null!
+     [java] Error converting java/itm/image/ImageConverter.java : java.lang.IllegalArgumentException: image == null!
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageConverter:
+     [java] converting /home/rustong_pu/Programming/ITM - A1/java/itm/image to /home/rustong_pu/Programming/ITM - A1/out
+     [java] Error converting java/itm/image/ImageMetadataGenerator.java : java.lang.IllegalArgumentException: image == null!
+     [java] Error converting java/itm/image/ImageHistogramGenerator.java : java.lang.IllegalArgumentException: image == null!
+     [java] Error converting java/itm/image/ImageThumbnailGenerator.java : java.lang.IllegalArgumentException: image == null!
+     [java] Error converting java/itm/image/ImageConverter.java : java.lang.IllegalArgumentException: image == null!
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageConverter:
+     [java] converting /home/rustong_pu/Programming/ITM - A1/java/itm/image to /home/rustong_pu/Programming/ITM - A1/out
+     [java] Error converting java/itm/image/ImageMetadataGenerator.java : java.lang.IllegalArgumentException: image == null!
+     [java] Error converting java/itm/image/ImageHistogramGenerator.java : java.lang.IllegalArgumentException: image == null!
+     [java] Error converting java/itm/image/ImageThumbnailGenerator.java : java.lang.IllegalArgumentException: image == null!
+     [java] Error converting java/itm/image/ImageConverter.java : java.lang.IllegalArgumentException: image == null!
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageThumbnailGenerator:
+     [java] Error converting java/itm/image : java.lang.NullPointerException
+     [java] Error converting java/itm/image : java.lang.NullPointerException
+     [java] Error converting java/itm/image : java.lang.NullPointerException
+     [java] Error converting java/itm/image : java.lang.NullPointerException
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageMetadataGenerator:
+     [java] Error converting java/itm/image : java.io.IOException: Could not determine what object to create from filename extension java
+     [java] Error converting java/itm/image : java.io.IOException: Could not determine what object to create from filename extension java
+     [java] Error converting java/itm/image : java.io.IOException: Could not determine what object to create from filename extension java
+     [java] Error converting java/itm/image : java.io.IOException: Could not determine what object to create from filename extension java
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageHistogramGenerator:
+     [java] converted java/itm/image/ImageMetadataGenerator.java to out/ImageMetadataGenerator.java.hist.png
+     [java] converted java/itm/image/ImageHistogramGenerator.java to out/ImageHistogramGenerator.java.hist.png
+     [java] converted java/itm/image/ImageThumbnailGenerator.java to out/ImageThumbnailGenerator.java.hist.png
+     [java] converted java/itm/image/ImageConverter.java to out/ImageConverter.java.hist.png
+
+BUILD SUCCESSFUL
+
+clean-thumbs:
+     [echo] Deleting thumbnail directory /home/rustong_pu/Programming/ITM - A1/thumbnails and /home/rustong_pu/Programming/ITM - A1/webapps/itm/media/md if existing
+
+clean-build:
+     [echo] Deleting build directory /home/rustong_pu/Programming/ITM - A1/build and /home/rustong_pu/Programming/ITM - A1/webapps/itm/WEB-INF/classes if existing
+   [delete] Deleting directory /home/rustong_pu/Programming/ITM - A1/build
+
+clean:
+
+BUILD SUCCESSFUL
+
+init:
+    [mkdir] Created dir: /home/rustong_pu/Programming/ITM - A1/build
+
+compile:
+    [javac] Compiling 9 source files to /home/rustong_pu/Programming/ITM - A1/build
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageConverter:
+     [java] converting /home/rustong_pu/Programming/ITM - A1/media/img to /home/rustong_pu/Programming/ITM - A1/media/script
+     [java] converted media/img/b20nature_plants245.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b20nature_plants245.jpg.bmp
+     [java] converted media/img/peafowl_picture1.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/peafowl_picture1.JPG.bmp
+     [java] converted media/img/b2seaanimals005.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b2seaanimals005.jpg.bmp
+     [java] converted media/img/b1shell008.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b1shell008.jpg.bmp
+     [java] converted media/img/elephant14m.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/elephant14m.JPG.bmp
+     [java] converted media/img/zebra3m.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/zebra3m.JPG.bmp
+     [java] converted media/img/picture_of_coati.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/picture_of_coati.JPG.bmp
+     [java] converted media/img/b3_seaanimals014.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b3_seaanimals014.jpg.bmp
+     [java] converted media/img/b9nature_plants064.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b9nature_plants064.jpg.bmp
+     [java] converted media/img/picture_of_goat11.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/picture_of_goat11.JPG.bmp
+     [java] converted media/img/blue_sky5m.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/blue_sky5m.JPG.bmp
+     [java] converted media/img/elephant14m.png to /home/rustong_pu/Programming/ITM - A1/media/script/elephant14m.png.bmp
+     [java] converted media/img/b17maartent1427.gif to /home/rustong_pu/Programming/ITM - A1/media/script/b17maartent1427.gif.bmp
+     [java] converted media/img/the_real_firefox.png to /home/rustong_pu/Programming/ITM - A1/media/script/the_real_firefox.png.bmp
+     [java] converted media/img/b17maartent1427.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b17maartent1427.jpg.bmp
+     [java] converted media/img/picture_of_coati_dithered.png to /home/rustong_pu/Programming/ITM - A1/media/script/picture_of_coati_dithered.png.bmp
+     [java] converted media/img/the_real_firefox_dithered.bmp to /home/rustong_pu/Programming/ITM - A1/media/script/the_real_firefox_dithered.bmp.bmp
+     [java] converted media/img/b1murene.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b1murene.jpg.bmp
+     [java] converted media/img/b1murene.gif to /home/rustong_pu/Programming/ITM - A1/media/script/b1murene.gif.bmp
+     [java] converted media/img/b17barb026_dithered.gif to /home/rustong_pu/Programming/ITM - A1/media/script/b17barb026_dithered.gif.bmp
+     [java] converted media/img/blue_sky4m.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/blue_sky4m.JPG.bmp
+     [java] converted media/img/underwater_rugby.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/underwater_rugby.JPG.bmp
+     [java] converted media/img/b17barb026.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b17barb026.jpg.bmp
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageConverter:
+     [java] converting /home/rustong_pu/Programming/ITM - A1/media/img to /home/rustong_pu/Programming/ITM - A1/media/script
+     [java] converted media/img/b20nature_plants245.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b20nature_plants245.jpg.png
+     [java] converted media/img/peafowl_picture1.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/peafowl_picture1.JPG.png
+     [java] converted media/img/b2seaanimals005.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b2seaanimals005.jpg.png
+     [java] converted media/img/b1shell008.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b1shell008.jpg.png
+     [java] converted media/img/elephant14m.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/elephant14m.JPG.png
+     [java] converted media/img/zebra3m.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/zebra3m.JPG.png
+     [java] converted media/img/picture_of_coati.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/picture_of_coati.JPG.png
+     [java] converted media/img/b3_seaanimals014.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b3_seaanimals014.jpg.png
+     [java] converted media/img/b9nature_plants064.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b9nature_plants064.jpg.png
+     [java] converted media/img/picture_of_goat11.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/picture_of_goat11.JPG.png
+     [java] converted media/img/blue_sky5m.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/blue_sky5m.JPG.png
+     [java] converted media/img/elephant14m.png to /home/rustong_pu/Programming/ITM - A1/media/script/elephant14m.png.png
+     [java] converted media/img/b17maartent1427.gif to /home/rustong_pu/Programming/ITM - A1/media/script/b17maartent1427.gif.png
+     [java] converted media/img/the_real_firefox.png to /home/rustong_pu/Programming/ITM - A1/media/script/the_real_firefox.png.png
+     [java] converted media/img/b17maartent1427.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b17maartent1427.jpg.png
+     [java] converted media/img/picture_of_coati_dithered.png to /home/rustong_pu/Programming/ITM - A1/media/script/picture_of_coati_dithered.png.png
+     [java] converted media/img/the_real_firefox_dithered.bmp to /home/rustong_pu/Programming/ITM - A1/media/script/the_real_firefox_dithered.bmp.png
+     [java] converted media/img/b1murene.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b1murene.jpg.png
+     [java] converted media/img/b1murene.gif to /home/rustong_pu/Programming/ITM - A1/media/script/b1murene.gif.png
+     [java] converted media/img/b17barb026_dithered.gif to /home/rustong_pu/Programming/ITM - A1/media/script/b17barb026_dithered.gif.png
+     [java] converted media/img/blue_sky4m.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/blue_sky4m.JPG.png
+     [java] converted media/img/underwater_rugby.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/underwater_rugby.JPG.png
+     [java] converted media/img/b17barb026.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b17barb026.jpg.png
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageConverter:
+     [java] converting /home/rustong_pu/Programming/ITM - A1/media/img to /home/rustong_pu/Programming/ITM - A1/media/script
+     [java] converted media/img/b20nature_plants245.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b20nature_plants245.jpg.jpeg
+     [java] converted media/img/peafowl_picture1.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/peafowl_picture1.JPG.jpeg
+     [java] converted media/img/b2seaanimals005.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b2seaanimals005.jpg.jpeg
+     [java] converted media/img/b1shell008.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b1shell008.jpg.jpeg
+     [java] converted media/img/elephant14m.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/elephant14m.JPG.jpeg
+     [java] converted media/img/zebra3m.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/zebra3m.JPG.jpeg
+     [java] converted media/img/picture_of_coati.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/picture_of_coati.JPG.jpeg
+     [java] converted media/img/b3_seaanimals014.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b3_seaanimals014.jpg.jpeg
+     [java] converted media/img/b9nature_plants064.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b9nature_plants064.jpg.jpeg
+     [java] converted media/img/picture_of_goat11.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/picture_of_goat11.JPG.jpeg
+     [java] converted media/img/blue_sky5m.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/blue_sky5m.JPG.jpeg
+     [java] converted media/img/elephant14m.png to /home/rustong_pu/Programming/ITM - A1/media/script/elephant14m.png.jpeg
+     [java] converted media/img/b17maartent1427.gif to /home/rustong_pu/Programming/ITM - A1/media/script/b17maartent1427.gif.jpeg
+     [java] converted media/img/the_real_firefox.png to /home/rustong_pu/Programming/ITM - A1/media/script/the_real_firefox.png.jpeg
+     [java] converted media/img/b17maartent1427.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b17maartent1427.jpg.jpeg
+     [java] converted media/img/picture_of_coati_dithered.png to /home/rustong_pu/Programming/ITM - A1/media/script/picture_of_coati_dithered.png.jpeg
+     [java] converted media/img/the_real_firefox_dithered.bmp to /home/rustong_pu/Programming/ITM - A1/media/script/the_real_firefox_dithered.bmp.jpeg
+     [java] converted media/img/b1murene.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b1murene.jpg.jpeg
+     [java] converted media/img/b1murene.gif to /home/rustong_pu/Programming/ITM - A1/media/script/b1murene.gif.jpeg
+     [java] converted media/img/b17barb026_dithered.gif to /home/rustong_pu/Programming/ITM - A1/media/script/b17barb026_dithered.gif.jpeg
+     [java] converted media/img/blue_sky4m.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/blue_sky4m.JPG.jpeg
+     [java] converted media/img/underwater_rugby.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/underwater_rugby.JPG.jpeg
+     [java] converted media/img/b17barb026.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b17barb026.jpg.jpeg
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageConverter:
+     [java] converting /home/rustong_pu/Programming/ITM - A1/media/img to /home/rustong_pu/Programming/ITM - A1/media/script
+     [java] converted media/img/b20nature_plants245.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b20nature_plants245.jpg.jpeg
+     [java] converted media/img/peafowl_picture1.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/peafowl_picture1.JPG.jpeg
+     [java] converted media/img/b2seaanimals005.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b2seaanimals005.jpg.jpeg
+     [java] converted media/img/b1shell008.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b1shell008.jpg.jpeg
+     [java] converted media/img/elephant14m.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/elephant14m.JPG.jpeg
+     [java] converted media/img/zebra3m.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/zebra3m.JPG.jpeg
+     [java] converted media/img/picture_of_coati.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/picture_of_coati.JPG.jpeg
+     [java] converted media/img/b3_seaanimals014.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b3_seaanimals014.jpg.jpeg
+     [java] converted media/img/b9nature_plants064.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b9nature_plants064.jpg.jpeg
+     [java] converted media/img/picture_of_goat11.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/picture_of_goat11.JPG.jpeg
+     [java] converted media/img/blue_sky5m.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/blue_sky5m.JPG.jpeg
+     [java] converted media/img/elephant14m.png to /home/rustong_pu/Programming/ITM - A1/media/script/elephant14m.png.jpeg
+     [java] converted media/img/b17maartent1427.gif to /home/rustong_pu/Programming/ITM - A1/media/script/b17maartent1427.gif.jpeg
+     [java] converted media/img/the_real_firefox.png to /home/rustong_pu/Programming/ITM - A1/media/script/the_real_firefox.png.jpeg
+     [java] converted media/img/b17maartent1427.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b17maartent1427.jpg.jpeg
+     [java] converted media/img/picture_of_coati_dithered.png to /home/rustong_pu/Programming/ITM - A1/media/script/picture_of_coati_dithered.png.jpeg
+     [java] converted media/img/the_real_firefox_dithered.bmp to /home/rustong_pu/Programming/ITM - A1/media/script/the_real_firefox_dithered.bmp.jpeg
+     [java] converted media/img/b1murene.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b1murene.jpg.jpeg
+     [java] converted media/img/b1murene.gif to /home/rustong_pu/Programming/ITM - A1/media/script/b1murene.gif.jpeg
+     [java] converted media/img/b17barb026_dithered.gif to /home/rustong_pu/Programming/ITM - A1/media/script/b17barb026_dithered.gif.jpeg
+     [java] converted media/img/blue_sky4m.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/blue_sky4m.JPG.jpeg
+     [java] converted media/img/underwater_rugby.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/underwater_rugby.JPG.jpeg
+     [java] converted media/img/b17barb026.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b17barb026.jpg.jpeg
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageConverter:
+     [java] converting /home/rustong_pu/Programming/ITM - A1/media/img to /home/rustong_pu/Programming/ITM - A1/media/script
+     [java] converted media/img/b20nature_plants245.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b20nature_plants245.jpg.jpeg
+     [java] converted media/img/peafowl_picture1.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/peafowl_picture1.JPG.jpeg
+     [java] converted media/img/b2seaanimals005.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b2seaanimals005.jpg.jpeg
+     [java] converted media/img/b1shell008.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b1shell008.jpg.jpeg
+     [java] converted media/img/elephant14m.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/elephant14m.JPG.jpeg
+     [java] converted media/img/zebra3m.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/zebra3m.JPG.jpeg
+     [java] converted media/img/picture_of_coati.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/picture_of_coati.JPG.jpeg
+     [java] converted media/img/b3_seaanimals014.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b3_seaanimals014.jpg.jpeg
+     [java] converted media/img/b9nature_plants064.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b9nature_plants064.jpg.jpeg
+     [java] converted media/img/picture_of_goat11.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/picture_of_goat11.JPG.jpeg
+     [java] converted media/img/blue_sky5m.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/blue_sky5m.JPG.jpeg
+     [java] converted media/img/elephant14m.png to /home/rustong_pu/Programming/ITM - A1/media/script/elephant14m.png.jpeg
+     [java] converted media/img/b17maartent1427.gif to /home/rustong_pu/Programming/ITM - A1/media/script/b17maartent1427.gif.jpeg
+     [java] converted media/img/the_real_firefox.png to /home/rustong_pu/Programming/ITM - A1/media/script/the_real_firefox.png.jpeg
+     [java] converted media/img/b17maartent1427.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b17maartent1427.jpg.jpeg
+     [java] converted media/img/picture_of_coati_dithered.png to /home/rustong_pu/Programming/ITM - A1/media/script/picture_of_coati_dithered.png.jpeg
+     [java] converted media/img/the_real_firefox_dithered.bmp to /home/rustong_pu/Programming/ITM - A1/media/script/the_real_firefox_dithered.bmp.jpeg
+     [java] converted media/img/b1murene.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b1murene.jpg.jpeg
+     [java] converted media/img/b1murene.gif to /home/rustong_pu/Programming/ITM - A1/media/script/b1murene.gif.jpeg
+     [java] converted media/img/b17barb026_dithered.gif to /home/rustong_pu/Programming/ITM - A1/media/script/b17barb026_dithered.gif.jpeg
+     [java] converted media/img/blue_sky4m.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/blue_sky4m.JPG.jpeg
+     [java] converted media/img/underwater_rugby.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/underwater_rugby.JPG.jpeg
+     [java] converted media/img/b17barb026.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b17barb026.jpg.jpeg
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageThumbnailGenerator:
+     [java] converted media/img/b20nature_plants245.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b20nature_plants245.jpg.png
+     [java] converted media/img/peafowl_picture1.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/peafowl_picture1.JPG.png
+     [java] converted media/img/b2seaanimals005.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b2seaanimals005.jpg.png
+     [java] converted media/img/b1shell008.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b1shell008.jpg.png
+     [java] converted media/img/elephant14m.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/elephant14m.JPG.png
+     [java] converted media/img/zebra3m.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/zebra3m.JPG.png
+     [java] converted media/img/picture_of_coati.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/picture_of_coati.JPG.png
+     [java] converted media/img/b3_seaanimals014.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b3_seaanimals014.jpg.png
+     [java] converted media/img/b9nature_plants064.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b9nature_plants064.jpg.png
+     [java] converted media/img/picture_of_goat11.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/picture_of_goat11.JPG.png
+     [java] converted media/img/blue_sky5m.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/blue_sky5m.JPG.png
+     [java] converted media/img/elephant14m.png to /home/rustong_pu/Programming/ITM - A1/media/script/elephant14m.png.png
+     [java] converted media/img/b17maartent1427.gif to /home/rustong_pu/Programming/ITM - A1/media/script/b17maartent1427.gif.png
+     [java] converted media/img/the_real_firefox.png to /home/rustong_pu/Programming/ITM - A1/media/script/the_real_firefox.png.png
+     [java] converted media/img/b17maartent1427.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b17maartent1427.jpg.png
+     [java] converted media/img/picture_of_coati_dithered.png to /home/rustong_pu/Programming/ITM - A1/media/script/picture_of_coati_dithered.png.png
+     [java] converted media/img/the_real_firefox_dithered.bmp to /home/rustong_pu/Programming/ITM - A1/media/script/the_real_firefox_dithered.bmp.png
+     [java] converted media/img/b1murene.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b1murene.jpg.png
+     [java] converted media/img/b1murene.gif to /home/rustong_pu/Programming/ITM - A1/media/script/b1murene.gif.png
+     [java] converted media/img/b17barb026_dithered.gif to /home/rustong_pu/Programming/ITM - A1/media/script/b17barb026_dithered.gif.png
+     [java] converted media/img/blue_sky4m.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/blue_sky4m.JPG.png
+     [java] converted media/img/underwater_rugby.JPG to /home/rustong_pu/Programming/ITM - A1/media/script/underwater_rugby.JPG.png
+     [java] converted media/img/b17barb026.jpg to /home/rustong_pu/Programming/ITM - A1/media/script/b17barb026.jpg.png
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageMetadataGenerator:
+     [java] converted media/img/b20nature_plants245.jpg to media/script
+     [java] converted media/img/peafowl_picture1.JPG to media/script
+     [java] converted media/img/b2seaanimals005.jpg to media/script
+     [java] converted media/img/b1shell008.jpg to media/script
+     [java] converted media/img/elephant14m.JPG to media/script
+     [java] converted media/img/zebra3m.JPG to media/script
+     [java] converted media/img/picture_of_coati.JPG to media/script
+     [java] converted media/img/b3_seaanimals014.jpg to media/script
+     [java] converted media/img/b9nature_plants064.jpg to media/script
+     [java] converted media/img/picture_of_goat11.JPG to media/script
+     [java] converted media/img/blue_sky5m.JPG to media/script
+     [java] converted media/img/elephant14m.png to media/script
+     [java] converted media/img/b17maartent1427.gif to media/script
+     [java] converted media/img/the_real_firefox.png to media/script
+     [java] converted media/img/b17maartent1427.jpg to media/script
+     [java] converted media/img/picture_of_coati_dithered.png to media/script
+     [java] converted media/img/the_real_firefox_dithered.bmp to media/script
+     [java] converted media/img/b1murene.jpg to media/script
+     [java] converted media/img/b1murene.gif to media/script
+     [java] converted media/img/b17barb026_dithered.gif to media/script
+     [java] converted media/img/blue_sky4m.JPG to media/script
+     [java] converted media/img/underwater_rugby.JPG to media/script
+     [java] converted media/img/b17barb026.jpg to media/script
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+
+ImageHistogramGenerator:
+     [java] converted media/img/b20nature_plants245.jpg to media/script/b20nature_plants245.jpg.hist.png
+     [java] converted media/img/peafowl_picture1.JPG to media/script/peafowl_picture1.JPG.hist.png
+     [java] converted media/img/b2seaanimals005.jpg to media/script/b2seaanimals005.jpg.hist.png
+     [java] converted media/img/b1shell008.jpg to media/script/b1shell008.jpg.hist.png
+     [java] converted media/img/elephant14m.JPG to media/script/elephant14m.JPG.hist.png
+     [java] converted media/img/zebra3m.JPG to media/script/zebra3m.JPG.hist.png
+     [java] converted media/img/picture_of_coati.JPG to media/script/picture_of_coati.JPG.hist.png
+     [java] converted media/img/b3_seaanimals014.jpg to media/script/b3_seaanimals014.jpg.hist.png
+     [java] converted media/img/b9nature_plants064.jpg to media/script/b9nature_plants064.jpg.hist.png
+     [java] converted media/img/picture_of_goat11.JPG to media/script/picture_of_goat11.JPG.hist.png
+     [java] converted media/img/blue_sky5m.JPG to media/script/blue_sky5m.JPG.hist.png
+     [java] converted media/img/elephant14m.png to media/script/elephant14m.png.hist.png
+     [java] converted media/img/b17maartent1427.gif to media/script/b17maartent1427.gif.hist.png
+     [java] converted media/img/the_real_firefox.png to media/script/the_real_firefox.png.hist.png
+     [java] converted media/img/b17maartent1427.jpg to media/script/b17maartent1427.jpg.hist.png
+     [java] converted media/img/picture_of_coati_dithered.png to media/script/picture_of_coati_dithered.png.hist.png
+     [java] converted media/img/the_real_firefox_dithered.bmp to media/script/the_real_firefox_dithered.bmp.hist.png
+     [java] converted media/img/b1murene.jpg to media/script/b1murene.jpg.hist.png
+     [java] converted media/img/b1murene.gif to media/script/b1murene.gif.hist.png
+     [java] converted media/img/b17barb026_dithered.gif to media/script/b17barb026_dithered.gif.hist.png
+     [java] converted media/img/blue_sky4m.JPG to media/script/blue_sky4m.JPG.hist.png
+     [java] converted media/img/underwater_rugby.JPG to media/script/underwater_rugby.JPG.hist.png
+     [java] converted media/img/b17barb026.jpg to media/script/b17barb026.jpg.hist.png
+
+BUILD SUCCESSFUL

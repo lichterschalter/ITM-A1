@@ -51,3 +51,140 @@ BUILD FAILED
 	at org.apache.tools.ant.Project.executeTargets(Project.java:1260)
 	at org.eclipse.ant.internal.launching.remote.InternalAntRunner.run(InternalAntRunner.java:453)
 	at org.eclipse.ant.internal.launching.remote.InternalAntRunner.main(InternalAntRunner.java:140)
+
+init:
+
+compile:
+    [javac] /home/rustong_pu/Programming/ITM - A1/ITM - A1/build.xml:44: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+ImageConverter:
+    [mkdir] Created dir: /home/rustong_pu/Programming/ITM - A1/test
+     [java] converting /home/rustong_pu/Programming/ITM - A1/media/img to /home/rustong_pu/Programming/ITM - A1/test
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/b20nature_plants245.jpg to /home/rustong_pu/Programming/ITM - A1/test/b20nature_plants245.jpg.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/peafowl_picture1.JPG to /home/rustong_pu/Programming/ITM - A1/test/peafowl_picture1.JPG.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/b2seaanimals005.jpg to /home/rustong_pu/Programming/ITM - A1/test/b2seaanimals005.jpg.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/b1shell008.jpg to /home/rustong_pu/Programming/ITM - A1/test/b1shell008.jpg.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/elephant14m.JPG to /home/rustong_pu/Programming/ITM - A1/test/elephant14m.JPG.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/zebra3m.JPG to /home/rustong_pu/Programming/ITM - A1/test/zebra3m.JPG.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/picture_of_coati.JPG to /home/rustong_pu/Programming/ITM - A1/test/picture_of_coati.JPG.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/b3_seaanimals014.jpg to /home/rustong_pu/Programming/ITM - A1/test/b3_seaanimals014.jpg.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/b9nature_plants064.jpg to /home/rustong_pu/Programming/ITM - A1/test/b9nature_plants064.jpg.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/picture_of_goat11.JPG to /home/rustong_pu/Programming/ITM - A1/test/picture_of_goat11.JPG.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/blue_sky5m.JPG to /home/rustong_pu/Programming/ITM - A1/test/blue_sky5m.JPG.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/elephant14m.png to /home/rustong_pu/Programming/ITM - A1/test/elephant14m.png.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/b17maartent1427.gif to /home/rustong_pu/Programming/ITM - A1/test/b17maartent1427.gif.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/the_real_firefox.png to /home/rustong_pu/Programming/ITM - A1/test/the_real_firefox.png.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/b17maartent1427.jpg to /home/rustong_pu/Programming/ITM - A1/test/b17maartent1427.jpg.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/picture_of_coati_dithered.png to /home/rustong_pu/Programming/ITM - A1/test/picture_of_coati_dithered.png.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/the_real_firefox_dithered.bmp to /home/rustong_pu/Programming/ITM - A1/test/the_real_firefox_dithered.bmp.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/b1murene.jpg to /home/rustong_pu/Programming/ITM - A1/test/b1murene.jpg.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/b1murene.gif to /home/rustong_pu/Programming/ITM - A1/test/b1murene.gif.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/b17barb026_dithered.gif to /home/rustong_pu/Programming/ITM - A1/test/b17barb026_dithered.gif.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/blue_sky4m.JPG to /home/rustong_pu/Programming/ITM - A1/test/blue_sky4m.JPG.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/underwater_rugby.JPG to /home/rustong_pu/Programming/ITM - A1/test/underwater_rugby.JPG.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/b17barb026.jpg to /home/rustong_pu/Programming/ITM - A1/test/b17barb026.jpg.jpeg
+BUILD SUCCESSFUL
+
+BUILD SUCCESSFUL
+
+init:
+
+compile:
+    [javac] /home/rustong_pu/Programming/ITM - A1/ITM - A1/build.xml:44: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+ImageConverter:
+     [java] converting /home/rustong_pu/Programming/ITM - A1/media/img to /home/rustong_pu/Programming/ITM - A1/test
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/b20nature_plants245.jpg to /home/rustong_pu/Programming/ITM - A1/test/b20nature_plants245.jpg.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/peafowl_picture1.JPG to /home/rustong_pu/Programming/ITM - A1/test/peafowl_picture1.JPG.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/b2seaanimals005.jpg to /home/rustong_pu/Programming/ITM - A1/test/b2seaanimals005.jpg.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/b1shell008.jpg to /home/rustong_pu/Programming/ITM - A1/test/b1shell008.jpg.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/elephant14m.JPG to /home/rustong_pu/Programming/ITM - A1/test/elephant14m.JPG.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/zebra3m.JPG to /home/rustong_pu/Programming/ITM - A1/test/zebra3m.JPG.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/picture_of_coati.JPG to /home/rustong_pu/Programming/ITM - A1/test/picture_of_coati.JPG.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/b3_seaanimals014.jpg to /home/rustong_pu/Programming/ITM - A1/test/b3_seaanimals014.jpg.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/b9nature_plants064.jpg to /home/rustong_pu/Programming/ITM - A1/test/b9nature_plants064.jpg.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/picture_of_goat11.JPG to /home/rustong_pu/Programming/ITM - A1/test/picture_of_goat11.JPG.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/blue_sky5m.JPG to /home/rustong_pu/Programming/ITM - A1/test/blue_sky5m.JPG.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/elephant14m.png to /home/rustong_pu/Programming/ITM - A1/test/elephant14m.png.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/b17maartent1427.gif to /home/rustong_pu/Programming/ITM - A1/test/b17maartent1427.gif.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/the_real_firefox.png to /home/rustong_pu/Programming/ITM - A1/test/the_real_firefox.png.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/b17maartent1427.jpg to /home/rustong_pu/Programming/ITM - A1/test/b17maartent1427.jpg.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/picture_of_coati_dithered.png to /home/rustong_pu/Programming/ITM - A1/test/picture_of_coati_dithered.png.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/the_real_firefox_dithered.bmp to /home/rustong_pu/Programming/ITM - A1/test/the_real_firefox_dithered.bmp.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/b1murene.jpg to /home/rustong_pu/Programming/ITM - A1/test/b1murene.jpg.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/b1murene.gif to /home/rustong_pu/Programming/ITM - A1/test/b1murene.gif.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/b17barb026_dithered.gif to /home/rustong_pu/Programming/ITM - A1/test/b17barb026_dithered.gif.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/blue_sky4m.JPG to /home/rustong_pu/Programming/ITM - A1/test/blue_sky4m.JPG.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/underwater_rugby.JPG to /home/rustong_pu/Programming/ITM - A1/test/underwater_rugby.JPG.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/b17barb026.jpg to /home/rustong_pu/Programming/ITM - A1/test/b17barb026.jpg.jpeg
+BUILD SUCCESSFUL
+
+BUILD SUCCESSFUL
+
+:
+
+:
+
+BUILD FAILED
+
+Target "90" does not exist in the project "2016_ITM_UE". 
+	at org.apache.tools.ant.Project.tsort(Project.java:1929)
+	at org.apache.tools.ant.Project.topoSort(Project.java:1837)
+	at org.apache.tools.ant.Project.topoSort(Project.java:1800)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1376)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.eclipse.ant.internal.launching.remote.EclipseDefaultExecutor.executeTargets(EclipseDefaultExecutor.java:36)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1260)
+	at org.eclipse.ant.internal.launching.remote.InternalAntRunner.run(InternalAntRunner.java:453)
+	at org.eclipse.ant.internal.launching.remote.InternalAntRunner.main(InternalAntRunner.java:140)
+
+:
+
+:
+
+BUILD FAILED
+
+Target "90" does not exist in the project "2016_ITM_UE". 
+	at org.apache.tools.ant.Project.tsort(Project.java:1929)
+	at org.apache.tools.ant.Project.topoSort(Project.java:1837)
+	at org.apache.tools.ant.Project.topoSort(Project.java:1800)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1376)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.eclipse.ant.internal.launching.remote.EclipseDefaultExecutor.executeTargets(EclipseDefaultExecutor.java:36)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1260)
+	at org.eclipse.ant.internal.launching.remote.InternalAntRunner.run(InternalAntRunner.java:453)
+	at org.eclipse.ant.internal.launching.remote.InternalAntRunner.main(InternalAntRunner.java:140)
+
+init:
+
+compile:
+    [javac] /home/rustong_pu/Programming/ITM - A1/ITM - A1/build.xml:44: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+ImageConverter:
+     [java] converting /home/rustong_pu/Programming/ITM - A1/media/img to /home/rustong_pu/Programming/ITM - A1/test
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/b20nature_plants245.jpg to /home/rustong_pu/Programming/ITM - A1/test/b20nature_plants245.jpg.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/peafowl_picture1.JPG to /home/rustong_pu/Programming/ITM - A1/test/peafowl_picture1.JPG.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/b2seaanimals005.jpg to /home/rustong_pu/Programming/ITM - A1/test/b2seaanimals005.jpg.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/b1shell008.jpg to /home/rustong_pu/Programming/ITM - A1/test/b1shell008.jpg.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/elephant14m.JPG to /home/rustong_pu/Programming/ITM - A1/test/elephant14m.JPG.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/zebra3m.JPG to /home/rustong_pu/Programming/ITM - A1/test/zebra3m.JPG.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/picture_of_coati.JPG to /home/rustong_pu/Programming/ITM - A1/test/picture_of_coati.JPG.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/b3_seaanimals014.jpg to /home/rustong_pu/Programming/ITM - A1/test/b3_seaanimals014.jpg.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/b9nature_plants064.jpg to /home/rustong_pu/Programming/ITM - A1/test/b9nature_plants064.jpg.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/picture_of_goat11.JPG to /home/rustong_pu/Programming/ITM - A1/test/picture_of_goat11.JPG.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/blue_sky5m.JPG to /home/rustong_pu/Programming/ITM - A1/test/blue_sky5m.JPG.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/elephant14m.png to /home/rustong_pu/Programming/ITM - A1/test/elephant14m.png.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/b17maartent1427.gif to /home/rustong_pu/Programming/ITM - A1/test/b17maartent1427.gif.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/the_real_firefox.png to /home/rustong_pu/Programming/ITM - A1/test/the_real_firefox.png.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/b17maartent1427.jpg to /home/rustong_pu/Programming/ITM - A1/test/b17maartent1427.jpg.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/picture_of_coati_dithered.png to /home/rustong_pu/Programming/ITM - A1/test/picture_of_coati_dithered.png.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/the_real_firefox_dithered.bmp to /home/rustong_pu/Programming/ITM - A1/test/the_real_firefox_dithered.bmp.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/b1murene.jpg to /home/rustong_pu/Programming/ITM - A1/test/b1murene.jpg.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/b1murene.gif to /home/rustong_pu/Programming/ITM - A1/test/b1murene.gif.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/b17barb026_dithered.gif to /home/rustong_pu/Programming/ITM - A1/test/b17barb026_dithered.gif.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/blue_sky4m.JPG to /home/rustong_pu/Programming/ITM - A1/test/blue_sky4m.JPG.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/underwater_rugby.JPG to /home/rustong_pu/Programming/ITM - A1/test/underwater_rugby.JPG.jpeg
+     [java] converted /home/rustong_pu/Programming/ITM - A1/media/img/b17barb026.jpg to /home/rustong_pu/Programming/ITM - A1/test/b17barb026.jpg.jpeg
+BUILD SUCCESSFUL
+
+BUILD SUCCESSFUL

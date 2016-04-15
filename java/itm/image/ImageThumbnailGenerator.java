@@ -163,7 +163,6 @@ public class ImageThumbnailGenerator
         // scale the image to a maximum of [ 200 w X 100 h ] pixels - do not distort!
         // if the image is smaller than [ 200 w X 100 h ] - print it on a [ dim X dim ] canvas!
 	    double ratio = (double) imgNew.getWidth() / (double) imgNew.getHeight();
-	    System.out.println( img.getType() );
     	BufferedImage imgNewNew = new BufferedImage( 200, (int) (200 / ratio), imgType );
     	grafik = imgNewNew.createGraphics();
 		if( imgNew.getWidth() > 200 ){
@@ -191,7 +190,6 @@ public class ImageThumbnailGenerator
     	affineRotation.concatenate( translate );  	
     	AffineTransformOp rotationOp = new AffineTransformOp( affineRotation, AffineTransformOp.TYPE_BILINEAR );
     	grafik.drawImage( rotationOp.filter( imgNewNew, null), 0, 0, null );
-
         
         //save the rotated image
         File outputFileRot = new File( output.getAbsolutePath() + "/" + input.getName() + "-ROTATED-." + imgType );
